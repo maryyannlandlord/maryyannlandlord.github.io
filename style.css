@@ -282,19 +282,13 @@ body {
 	height: 212px;
 }
 
-
 .proj{
 	max-width: 275px;
 	margin-left: 22px;
 	margin-right: 22px; 
 	float: left;
-	text-decoration: none;
-	color: black;  
+	text-decoration: none; 
 
-}
-
-.proj:hover{
-	color: #CB0103;
 }
 
 #first_proj{
