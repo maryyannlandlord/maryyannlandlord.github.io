@@ -18,6 +18,11 @@ body {
 	src: url(ProximaNova-Regular.otf) format('opentype');
 }
 
+@font-face {
+	font-family: 'proximanovalight';
+	src: url(proximanovalight.ttf) format('opentype');
+}
+
 #canvas{
 	margin: 10px auto; 
 	max-width:960px; 
@@ -129,6 +134,14 @@ body {
 
 #top_divider{
 	height: 3px;
+}
+
+#contact{
+	font-size: 14px;
+	letter-spacing: .5px;
+	float: right;
+	font-weight: none;
+	font-family: 'proximanovalight';
 }
 /*///////////////////////////////
 ///////////// HOME //////////////
@@ -739,14 +752,16 @@ body {
 
 .sketch {
 	text-decoration: none;
+	display: inline-block;
 	margin: 3.5px;
+	
 }
 
 .sketch_icon{
 	width: 150px;
 	height: 150px;
 	text-decoration:none; 
-
+	
 }
 
 .sketch_icon:hover{
