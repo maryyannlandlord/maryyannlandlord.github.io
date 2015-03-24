@@ -1,0 +1,181 @@
+@font-face {
+	font-family: 'BebasNeueBold';
+	src: url(BebasNeueBold.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url(BebasNeueRegular.otf) format('opentype');
+}
+
+body{
+	background-color: #EDEBE8;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+
+
+#content{
+	max-width: 900px;
+	height: 900px; 
+	margin: auto;
+	text-align: center; 
+	opacity: 0; 
+}
+
+.sentence{
+	width: 900px;
+	height: 600px; 
+	position: relative;
+	margin-top: 50%;
+
+}
+
+
+
+
+/******************
+*******ONE**********/
+
+
+#one_p1{
+	font-family: 'BebasNeueBold';
+	font-variant: small-caps;
+	font-size: 34px;
+	
+}
+
+#one_p2{
+	font-family: 'BebasNeueBold';
+	font-variant: small-caps;
+	font-size: 34px;
+	color: #7FFF00;
+	height: 600px;
+
+}
+
+
+
+#mystics{
+	text-decoration: none; 
+	color: white;
+	text-shadow:
+   	-0.5px -0.5px 0 #000,  
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+
+}
+
+#mystics:hover{
+	color: #4CBEE5;
+}
+
+
+#rationalists{
+	text-decoration: none; 
+	color: red; 
+}
+
+#rationalists:hover{
+	color: #7FFF00;
+}
+
+
+#period{
+	text-decoration: none;
+	color: #7FFF00; 
+}
+
+#period:hover{
+	color: red;
+}
+
+#leap{
+	text-decoration: none; 
+	color: #7FFF00;
+}
+
+#leap:hover{
+	color: red;
+}
+
+#logic{
+	text-decoration: none; 
+	color: white;
+	text-shadow: 
+	-0.5px -0.5px 0 #000,  
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
+
+#logic:hover{
+	color: red;
+}
+
+/******************
+*******TWO**********/
+
+#two{
+	font-family: "BebasNeueRegular";
+	font-size: 30px;
+	color: #F7E259;
+	word-wrap: break-word;
+	max-width: 900px;
+}
+
+#three_trans{
+	color:#F7E259;
+	text-decoration: none; 
+}
+
+#three_trans:hover{
+	color: red; 
+}
+
+.repeat{
+	color:#7F7F7F;
+	text-decoration: none;
+	word-wrap: break-word; 
+	max-width: 900px;
+}
+
+.repeat:hover{
+	color: white;
+}
+
+/******************
+*******THREE*******/
+
+#three{
+	font-family: "BebasNeueRegular";
+	color: #E5B766;
+	font-size: 30px; 
+	height: 40px;
+	margin-bottom: 600px;
+}
+
+
+#experience{
+	font-size: 15px;
+	color: black;
+	text-decoration: none; 
+}
+
+#experience:hover{
+	color:#8552EF; 
+}
+
+
+#simple_sketch{
+	width: 800px;
+	height: 300px;
+	margin-top: 0px;
+}
+
+#by{
+	margin-left: 100px; 
+}
