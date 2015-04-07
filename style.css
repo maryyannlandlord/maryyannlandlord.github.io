@@ -570,9 +570,12 @@ body {
 }
 
 
-#critter_dev_caption{
-	margin-top: -30px;
+#critter_dev2 {
+	width: 960px;
+	height: 540px;
+	margin-top: 25px;
 }
+
 
 #proj2_process{
 	width: 960px;
