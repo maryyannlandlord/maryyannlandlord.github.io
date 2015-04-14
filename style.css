@@ -770,4 +770,17 @@ body {
 .sketch_icon:hover{
 	opacity: .8; 
 
-};
+}
+
+/*////DISNEY 2D////////
+//////////////////////*/
+
+.sketch_title{
+	font-family:"proxima-nova";
+	font-variant: small-caps;
+	font-size: 17px; 
+	color: black;
+	text-align: left;
+	letter-spacing: 0.7px;
+	margin-bottom: 25px;
+}
