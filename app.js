@@ -1,5 +1,10 @@
 $(document).ready(function() {
 
+
+	$("#proj_Orlas_Hive_slide").cycle(
+		);
+
+
 	$("#gif_1").hover(
 		function()
 	{
