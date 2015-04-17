@@ -550,6 +550,10 @@ body {
 .doc_icon:hover{
 	opacity: .8;
 }
+
+#html5-watermark{
+	display: none !important; 
+}
 /*/////////PROJECT ORLA'S HIVE//////////*/
 
 
