@@ -1,29 +1,5 @@
 $(document).ready(function() {
 
-	$('#proj1_bee_slide').cycle({
-		timeout: 2000
-	});
-
-	$('#proj1_bucket_slide').cycle({
-		timeout: 3000
-	});
-
-	$('#proj2_save_me_slide').cycle({
-		timeout: 3000
-	})
-
-	$('#dragon_slide').cycle({
-		timeout: 3000
-	})
-
-	$('#pig_slide').cycle({
-		timeout: 3000
-	})
-
-	$('#lagooned_slide').cycle({
-		timeout: 3000
-	})
-
 	$("#gif_1").hover(
 		function()
 	{

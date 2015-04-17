@@ -25,7 +25,7 @@ body {
 
 #canvas{
 	margin: 10px auto; 
-	max-width:960px; 
+	width:960px; 
 	padding: 75px;
 }
 
@@ -117,6 +117,7 @@ body {
 }
 .content{ 
 	margin: 0px;  
+	width: 960px;
 	background: transparent; 
 	margin-top: 88px; 
 	padding-bottom: 118px;
@@ -283,66 +284,118 @@ body {
 .portfolio{
 	width: 960px;
 	margin: auto;
-	margin-top: 230px;
+	margin-top: 100px;
 	height: auto;
 	margin-bottom: 100px;
 }
 
 .row{
-	width: 960px;
-	height: 212px;
+	width: 965px;
+	height: 424px;
+	margin-top: 63px;
 }
 
 .proj{
-	max-width: 275px;
-	margin-left: 22px;
-	margin-right: 22px; 
+	width: 200px;
+	margin-left: 20px;
+	margin-right: 20px; 
 	float: left;
 	text-decoration: none; 
-
+	margin-bottom: 25px;
+	display: block;
 }
 
-#first_proj{
-	margin-left: 11px;
-}
-
-#last_proj{
-	margin-right: 0px;
-}
 
 .darken{
-	background-color: white;
-	height: 200px;
 	text-align: center; 
 	margin: 0px;
-	margin-top: 10px;  
 	color: black; 
 	letter-spacing: 2px;
 	font-variant: small-caps;
 	font-size: 13px;
+	text-decoration: none; 
 }
 
 
-.darken:hover{
+.white_bg {
+	background: white;
+	height: 200px;
+}
+
+.proj:hover p {
 	color: #CB0103;
 }
 
+.proj:hover .proj_icon {
+	opacity: 0.9;
+}
+
 .proj_icon{
-	max-width: 200px;
-	margin: 0px; 
+	width: 200px;
+	margin: 0px;
 }
 
-.proj_icon:hover{
-	opacity: .9;
+.proj p {
+	margin: 15px 0 0;
+	padding: 0;
 }
 
-.darken:hover{
-	background-color: white;
+
+
+#artist_demo_reel{
+	width:960px;
+	height: 480px;
+	text-align: center;
+	margin-top: -87px;
+	margin-bottom: 33px;
 }
 
+.reel_header{
+	color: black;
+	height: 100px;
+	font-size: 15px;
+	letter-spacing: 1.1px; 
+	margin-left: 53px;
+	margin-bottom: 19px;
+}
+
+.icon_desc{
+	margin-bottom: 15px;
+}
+
+
+#projects_header{
+	color: black;
+	height: 50px;
+	font-size: 15px;
+	letter-spacing: 1.1px; 
+	margin:0px;
+	margin-top: 23px;
+	margin-left: 21px;
+}
+
+.reel_caption{
+	margin: 0px;
+	float: right;
+	color: white;
+	margin-right: 53px;
+}
 /*///////////////////////////////
 ///////////PROJECTS/////////////
 ///////////////////////////////*/
+
+#proj{
+	width: 960px; 
+	margin: 0px;
+	padding:0px;
+	overflow: hidden;
+}
+
+#proj_process{
+	width: 960px;
+	margin-top: 200px;
+	margin-bottom: 120px;
+}
 
 #proj_header{
 	color: black;
@@ -497,39 +550,34 @@ body {
 .doc_icon:hover{
 	opacity: .8;
 }
-/*/////////PROJECT 1//////////*/
+/*/////////PROJECT ORLA'S HIVE//////////*/
 
 
-#mojo_intro{
-	height: auto;
-	width: 960px;
-	margin-bottom: 100px;
-}
-#proj1_process{
+#proj_Orlas_Hive_process{
 	width: 960px;
 	height: 500px;
 	margin-top: 200px;
 	margin-bottom: 120px;
 }
 
-#proj1_process_slide{
+#proj_Orlas_Hive_process_slide{
 	width: 400px;
 	height: auto;
 	float: left;
 }
 
-#proj1_bee_slide{
-	width:400px;
+#proj_Orlas_Hive_slide{
+	width: 400px;
 	height: 427px;
 
 }
 
-#proj1_bee_slide img{
+#proj_Orlas_Hive_slide img{
 	width: 400px;
 	float: left;
 }
 
-#proj1_proj_decr{
+#proj_Orlas_Hive_decr{
 	margin-left: 135px;
 	float: left;
 	max-width: 310px;
@@ -537,95 +585,16 @@ body {
 
 }
 
-
-#proj1_bucket_slide{
-	width: 960px;
-	height: 540px;
-}
-
-#proj1_bucket_slide img{
-	margin: auto 0;
-	width: 960px;
-	height: 540px;
-
-}
-
-/*/////////PROJECT 2//////////*/
-
-#proj2 {
-	width:960px;
-	margin: 0 auto;
-	height: auto;
+.doc_reel{
+	margin:0;
+	padding:0;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 
-#proj2_sketch{
-	width:960px;
-	height: auto;
-}
 
-#critter_dev {
-	width: 960px;
-	margin-top: 33px;
-}
-
-
-#critter_dev2 {
-	width: 960px;
-	height: 540px;
-	margin-top: 25px;
-}
-
-
-#proj2_process{
-	width: 960px;
-	height: auto;
-	margin-top: 200px;
-	margin-bottom: 120px;
-}
-
-#proj2_process_desc{
-	margin-top: 100px;
-}
-
-#bandit {
-	width:960px;
-	height: 454px;
-	margin-top: 100px;
-	margin-bottom: 120px;
-}
-
-#bandit_pic{
-	width: 500px;
-	float: left;
-}
-
-#bandit_pic img{
-	width: 500px;
-}
-
-
-#bandit_desc{
-	max-width: 280px;
-	margin-left: 135px;
-	float: left;
-	text-align: left;
-}
-
-
-#proj2_save_me_slide{
-	width: 960px;
-	height: 540px;
-}
-
-#proj2_save_me_slide img{
-	margin: auto 0;
-	width: 960px;
-	height: 540px;
-}
-
-
-/*/////////PROJECT 3//////////*/
+/*/////////PROJECT MOJO//////////*/
 
 
 
@@ -636,12 +605,18 @@ body {
 
 }
 
+#mojo_intro{
+	height: auto;
+	width: 960px;
+	margin-bottom: 100px;
+}
+
 #mojo_begins{
 	margin-top: 3px;
 	width: 960px;
 }
 
-#proj3{
+#projMojo{
 	width:960px;
 	margin: 0 auto;
 	height: auto;
@@ -655,17 +630,17 @@ body {
 
 }
 
-#proj3_process{
+#projMojo_process{
 	height: auto;
 	margin-top: 100px;
 
 }
 
-#proj3_first_imag{
+#projMojo_first_imag{
 	margin-top: 100px;
 }
 
-.proj3_image{
+.projMojo_image{
 	margin:auto;
 	width: 690px;
 }
@@ -673,15 +648,15 @@ body {
 
 
 
-/*/////////PROJECT 4//////////*/
+/*/////////PROJECT RUFUS//////////*/
 
-#proj4{
-	width:960px;
+#projRufus{
+	width: 960px;
 	margin: 0 auto;
 	height: auto;
 }
 
-#proj4_process{
+#projRufus_process{
 	height: auto;
 	margin-top: 100px;
 }
@@ -730,6 +705,52 @@ body {
 	margin-top: 10px;
 	width: 960px;
 }
+
+/*/////////PROJECT SAVE ME NEXT TIME//////////*/
+
+#projSaveMeNextTime {
+	width:960px;
+	margin: 0 auto;
+	height: auto;
+}
+
+
+#projSaveMeNextTime_sketch{
+	width:960px;
+	height: auto;
+}
+
+#critter_dev {
+	width: 960px;
+	margin-top: 33px;
+}
+
+
+#critter_dev2 {
+	width: 960px;
+	height: 540px;
+	margin-top: 25px;
+}
+
+
+#projSaveMeNextTime_process{
+	width: 960px;
+	height: auto;
+	margin-top: 200px;
+	margin-bottom: 120px;
+}
+
+#proj2_process_desc{
+	margin-top: 100px;
+}
+
+
+
+/*/////////PROJECT FACIAL PERFORMANCE//////////*/
+
+
+
+
 
 
 /*///////////////////////////////
