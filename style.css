@@ -750,8 +750,11 @@ body {
 
 
 
-/*/////////PROJECT FACIAL PERFORMANCE//////////*/
+/*/////////VINE//////////*/
 
+#cloth_gif{
+	margin-top: 20px;
+}
 
 
 
@@ -797,6 +800,21 @@ body {
 
 }
 
+.sketch_heading{
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 17px;
+	color: black;
+	margin-bottom: 50px;
+}
+
+.sketch_divide{
+	height:1px;
+	background:#717171;
+	border-bottom:1px solid #313030;
+	margin-top: 50px;
+	margin-bottom: 50px; 
+}
 /*////DISNEY 2D////////
 //////////////////////*/
 
