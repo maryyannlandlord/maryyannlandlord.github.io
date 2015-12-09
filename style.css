@@ -252,16 +252,17 @@ body {
 }
 
 
-.mojo_link{
+.disney_link{
 	text-decoration: none; 
-	color: rgba(89,83,66,1);
+	color: #EDE8E8;
 
 }
 
-.mojo_link:hover{
-	color: white;
+.disney_link:hover{
+	color: #CB0103;
 
 }
+
 
 #email{
 	float:right;
@@ -274,6 +275,15 @@ body {
 	float:right;
 	margin-top:-8px;
 	margin-left: 100px;
+}
+
+#statement{
+	text-decoration: none; 
+	color: #EDE8E8;
+}
+
+#statement:hover{
+	color: #CB0103;
 }
 
 /*///////////////////////////////
@@ -606,6 +616,17 @@ body {
 	width: 130px; 
 	float: left; 
 	margin-right: 10px;
+
+}
+
+.mojo_link{
+	text-decoration: none; 
+	color: #EDE8E8;
+
+}
+
+.mojo_link:hover{
+	color: #CB0103;
 
 }
 
