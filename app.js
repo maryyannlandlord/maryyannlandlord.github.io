@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+	lightbox.option({fadeDuration: 0, resizeDuration: 0})
 
 	$("#proj_Orlas_Hive_slide").cycle(
 		);
