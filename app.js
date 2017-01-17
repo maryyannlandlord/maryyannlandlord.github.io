@@ -1,9 +1,13 @@
 $(document).ready(function() {
 
-	lightbox.option({fadeDuration: 0, resizeDuration: 0})
+	
 
-	$("#proj_Orlas_Hive_slide").cycle(
-		);
+	$("#reelHover").click(function(){	
+
+			$("#reelVideo").show().find("iframe").attr("src", "https://www.youtube.com/embed/ciyACHJiFng?vq=hd1080&autoplay=1&rel=0&amp;&showinfo=0");
+			$("#reelCover").hide();
+			$("#reelHover").hide();
+		});
 
 
 	$("#gif_1").hover(
