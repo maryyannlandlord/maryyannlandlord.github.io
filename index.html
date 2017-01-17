@@ -3,10 +3,11 @@
 	<head>
 		<title>Maryyann</title>
 		<link rel="stylesheet" href="style.css">
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script src="app.js"></script>
-		<script src="jquery-1.11.0.min.js"></script>
-		<script src="lightbox.min.js"></script>
+		<script src = "jquery-1.11.0.min.js"></script>
+		<script src = "jquery.cycle.lite.js"></script>
+		<script src = "app.js"></script>
+		<link href="lightbox.css" rel="stylesheet" />
+		<meta name="Maryyann Landlord" content="Animator interested">
 	</head>
 
 
@@ -42,14 +43,67 @@
 
 					<div id = "artist_demo_reel">
 
-						<iframe width="853" height="480" src="http://www.youtube.com/embed/ciyACHJiFng?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						<div style = "height: 483.64px; width: 853px">
+							<div id = "reelCover"></div>
+							<div id = "reelHover"></div>
 						
-				    <p class = "reel_caption">last updated march 2016</p>
+						<div id = "reelVideo" style = "display: none; margin:auto; left:0; right:0; position: absolute;">
+								<iframe width = "853" height = "480" src = "" frameborder="0" allowfullscreen></iframe>
+						</div> 
 
-					</div>
+						</div>
 
-					<div class = "row">
-					
+					    <p class = "reel_caption">last updated march 2016</p>
+					</div> 
+
+						<!-- <div id = "meep"  onclick="this.style.display='none'; this.nextSibling.style.display='block';">
+							<img width = "853px" src="Portfolio/reel cover.png" style="cursor:pointer" />
+						</div><div style="display:none">
+							<iframe id = "test" width = "853" height = "480" src = "https://www.youtube.com/embed/ciyACHJiFng?vq=hd1080&rel=0&amp;&showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+						</div> !-->
+
+					<div id = "row_proj">
+
+						<a href="Driving Home.html" class = "proj">
+							<div class = "darken">
+								<div class="white_bg">
+									<img class = "proj_icon" src="Portfolio/DrivingHome/icon.png" >
+								</div>
+								<p>Driving Home</p>								
+							</div>
+						</a>
+
+						<a href="MemorySlugs.html" class = "proj">
+							<div class = "darken">
+								<div class="white_bg">
+									<img class = "proj_icon" src="Portfolio/MemorySlugs/icon.png" >
+								</div>
+								<p>Memory Slugs</p>								
+							</div>
+						</a>		
+
+
+						<a  href="BoB.html" class = "proj">
+							<div  class = "darken">
+								<div class="white_bg">
+									<img class = "proj_icon" src="Portfolio/BoB/icon.png" >
+								</div>
+								<p>Bridge of Birds</p>	
+							</div>
+						</a>				
+
+						<a  href="Alex.html" class = "proj">
+							<div  class = "darken">
+								<div class="white_bg">
+									<img class = "proj_icon" src="Portfolio/Alex/icon.png" >
+								</div>
+								<p>Alex</p>	
+							</div>
+						</a>
+
+
+
 						<a href="Project Mojo.html" class = "proj">
 							<div class = "darken">
 								<div class="white_bg">
@@ -77,16 +131,6 @@
 							</div>
 						</a>
 
-
-						<a  href="Project Orla's Hive.html" class = "proj">
-							<div  class = "darken">
-								<div class="white_bg">
-									<img class = "proj_icon" src="Portfolio/Bee/bee_icon.png" >
-								</div>
-								<p>Orla's Hive</p>	
-							</div>
-						</a>
-
 						<a href="Project Save Me Next Time.html" class = "proj">
 							<div  class = "darken">
 								<div class="white_bg">
@@ -96,21 +140,23 @@
 							</div>
 						</a>
 
-						<a id = "last_proj" href="Project Rufus.html" class = "proj">
-							<div  class = "darken">
-								<div class="white_bg">
-									<img class = "proj_icon" src="Portfolio/Rufus/icon.png" >
-								</div>
-								<p>Rufus</p>
-							</div>
-						</a>
-
 					</div>
+				</div>
+			</div>
+
+			<img class = "divider" src = "divider.png">
+
+			<div id = "contact" > 
+
+				<p>
+				<a id = "insta" target = "_blank" href = "https://www.instagram.com/l0nelypeach/">
+				<img class = "socialIcon" src = "insta_icon.png"> l0nelypeach </a>
+
+				<img class = "socialIcon" src = "email_icon.png"> mlandlor@gmail.com
+
+				</p>
 
 			</div>
-			
-			<img class = "divider" src = "divider.png">
-			<p id = "contact">mlandlor@gmail.com</p>
 			
 		</div>
 	</body>
