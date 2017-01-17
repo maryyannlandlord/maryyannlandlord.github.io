@@ -92,11 +92,6 @@ body {
 	/*color: black;*/
 }
 
-.socialIcon{
-	width: 17px;
-	vertical-align: middle;
-}
-
 
 #spacing{
 	margin-bottom: 1px;
@@ -126,7 +121,6 @@ body {
 	background: transparent; 
 	margin-top: 88px; 
 	padding-bottom: 118px;
-
 }
 
 .divider{ 
@@ -149,30 +143,7 @@ body {
 	float: right;
 	font-weight: none;
 	font-family: 'proximanovalight';
-	color: #2c2724;
 }
-
-#insta{
-	margin-right: 10px; 
-	text-decoration: none; 
-	color: #2c2724;
-
-}
-
-#insta:hover{
-	color: #CB0103;
-}
-
-.link{
-	text-decoration: none; 
-	font-weight: bold;
-	color: #CB0103;
-}
-
-.link:hover{
-	color: white;
-}
-
 /*///////////////////////////////
 ///////////// HOME //////////////
 ///////////////////////////////*/
@@ -265,7 +236,7 @@ body {
 
 #photo_size{
 	height: 300px;
-	margin-left: 31px;
+	margin-left: 56px;
 }
 
 #aboutMe{
@@ -281,6 +252,17 @@ body {
 }
 
 
+.disney_link{
+	text-decoration: none; 
+	color: #EDE8E8;
+
+}
+
+.disney_link:hover{
+	color: #CB0103;
+
+}
+
 
 #email{
 	float:right;
@@ -291,8 +273,7 @@ body {
 #sig{
 	width: 250px;
 	float:right;
-	margin-top:15px;
-	margin-bottom: 10px;
+	margin-top:-8px;
 	margin-left: 100px;
 }
 
@@ -318,9 +299,7 @@ body {
 	margin-bottom: 100px;
 }
 
-#
-
-.row_proj{
+.row{
 	width: 965px;
 	height: 424px;
 	margin-top: 63px;
@@ -378,19 +357,16 @@ body {
 	height: 480px;
 	text-align: center;
 	margin-top: -87px;
-	margin-bottom: 49px;
-
+	margin-bottom: 33px;
 }
 
 .reel_header{
 	color: black;
 	height: 100px;
-	font-size: 17px;
+	font-size: 15px;
 	letter-spacing: 1.1px; 
 	margin-left: 53px;
 	margin-bottom: 19px;
-	font-variant: small-caps;
-	font-weight: bold;
 }
 
 .icon_desc{
@@ -414,51 +390,6 @@ body {
 	color: white;
 	margin-right: 53px;
 }
-
-#reelCover{
-	width: 853px;
-	height: 480px;
-	background-image: url("Portfolio/reel cover.png");
-	background-size: 853px 480px;
-	cursor: pointer;
-	left:0;
-	right:0;
-	margin:auto;
-	margin-bottom: 3.64px;
-	position: absolute;
-	z-index: 2
-}
-
-#reelHover{
-	background-image: url("Portfolio/reel cover hover.png");width: 853px;
-	height: 480px;
-	background-image: url("Portfolio/reel cover hover.png");
-	background-size: 853px 480px;
-	cursor: pointer;
-	left:0;
-	right:0;
-	margin:auto;
-	margin-bottom: 3.64px;
-	z-index:1;
-	position:absolute;
-}
-
-#reelHover:hover{
-	width: 853px;
-	height: 480px;
-	background-image: url("Portfolio/reel cover hover.png");
-	background-size: 853px 480px;
-	cursor: pointer;
-	margin:auto;
-	margin-bottom: 3.64px;
-	z-index:2;
-}
-
-#reelCover:hover{
-	/*background-image:url("Portfolio/reel cover hover.png");*/
-	z-index: 1
-}
-
 /*///////////////////////////////
 ///////////PROJECTS/////////////
 ///////////////////////////////*/
@@ -472,13 +403,7 @@ body {
 
 #proj_process{
 	width: 960px;
-	margin-bottom: 120px;
-	text-align: center;
-}
-#proj_process{
-	width: 960px;
-	height: auto;
-	margin-top: 120px;
+	margin-top: 200px;
 	margin-bottom: 120px;
 }
 
@@ -487,15 +412,6 @@ body {
 	height: 132px;
 	font-size: 15px;
 	letter-spacing: 1.1px; 
-}
-
-
-#proj_icon{
-	width: 130px; 
-	float: left; 
-	margin-right: 10px;
-	padding-bottom: 30px;
-
 }
 
 #title_group{
@@ -548,13 +464,6 @@ body {
 	margin: 0 auto;
 }
 
-.image{
-	margin:auto;
-	width: 690px;
-	margin-bottom: 12px;
-}
-
-
 .caption{
 	font-size: 13px; 
 	color: black;
@@ -562,12 +471,6 @@ body {
 	float: left;
 	width: auto;
 	font-weight: bold;
-}
-
-.projimg{
-	width:960px;
-	height: auto;
-	margin-top: 35px;
 }
 
 .about_proj{
@@ -578,14 +481,13 @@ body {
 	color: black;
 	width: 890px;
 	letter-spacing: .5px;
-	text-align: left;
+	text-align: center;
 }
 
 .proj_heading{
 	font-weight: bold;
 	font-size: 17px;
 	color: black;
-	margin-top: 50px; 
 	margin-bottom: 50px;
 	text-align: center; 
 }
@@ -594,11 +496,8 @@ body {
 	margin-top: 100px;
 	width: 960px;
 	height: auto; 
+	margin-bottom: 100px;
 	text-align: center; 
-}
-
-#footer{
-	padding-top: 100px;
 }
 
 #back_to_portfolio a{
@@ -713,7 +612,12 @@ body {
 
 
 
+#real_fight_icon{
+	width: 130px; 
+	float: left; 
+	margin-right: 10px;
 
+}
 
 .mojo_link{
 	text-decoration: none; 
@@ -757,6 +661,14 @@ body {
 
 }
 
+#projMojo_first_imag{
+	margin-top: 100px;
+}
+
+.projMojo_image{
+	margin:auto;
+	width: 690px;
+}
 
 
 
@@ -828,6 +740,11 @@ body {
 }
 
 
+#projSaveMeNextTime_sketch{
+	width:960px;
+	height: auto;
+}
+
 #critter_dev {
 	width: 960px;
 	margin-top: 33px;
@@ -840,6 +757,13 @@ body {
 	margin-top: 25px;
 }
 
+
+#projSaveMeNextTime_process{
+	width: 960px;
+	height: auto;
+	margin-top: 200px;
+	margin-bottom: 120px;
+}
 
 #proj2_process_desc{
 	margin-top: 100px;
@@ -855,18 +779,7 @@ body {
 
 
 
-/*/////////PROJECT SAVE ME NEXT TIME//////////*/
 
-#prodBook{
-	opacity: 1;
-	width: 960px;
-	text-align: center;
-
-}
-
-#prodBook:hover{
-	opacity: .9;
-}
 
 /*///////////////////////////////
 ////////////SKETCHES/////////////
