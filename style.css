@@ -1,16 +1,16 @@
-body { 
+body {
 	/*
 	background: rgb(239,197,67);*/
 	/*background: #D5BD72;*/
 	background: #CCC099;
 	color: white;
 	margin: 0px;
-	padding: 0px; 
+	padding: 0px;
 	font-family: 'proxima-nova';
 	font-size: 12px;
-	background-image: url('desert.png'); 
-	background-repeat: no-repeat; 
-	background-position:center top ; 
+	background-image: url('desert.png');
+	background-repeat: no-repeat;
+	background-position:center top ;
 
 }
 @font-face {
@@ -23,27 +23,36 @@ body {
 	src: url(proximanovalight.ttf) format('opentype');
 }
 
-#canvas{
-	margin: 10px auto; 
-	width:960px; 
-	padding: 75px;
+#tag {
+    float: left;
+	  font-variant: small-caps;
+	  letter-spacing: 1.7px;
+    font-size: 18px;
 }
 
-#header{
-	height:79px; 
+#canvas {
+	margin: 10px auto;
+	width:960px;
+	padding: 30px;
+}
+
+#header {
+	height:59px;
 	background: transparent;
-	margin: 0px; 
+	margin: 0px;
 	padding: 0px;
 	max-width: 960px;
 }
 
+#header > div {
+    margin-top: 5px;
+}
+
 #logo{
-	width: 172px;
-	height: 82px;
-	float: left;
-	color: black;
-	font-weight: bold;
-	font-size: 37px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    top: 30px;
 }
 
 #logo p{
@@ -51,9 +60,7 @@ body {
 	padding: 0px;
 	line-height: 27px;
 	font-variant: small-caps;
-	letter-spacing: 2.7px; 
- 
-
+	letter-spacing: 2.7px;
 }
 
 
@@ -74,21 +81,24 @@ body {
 
 
 #nav{
-	float: right;
-	margin-top: 61px;
+	  float: right;
+    width: 500px;
+    text-align: right;
 }
 
 .nav_label{
 	color: white;
-	text-decoration: none; 
-	font-size: 17px;
+	text-decoration: none;
+	font-size: 18px;
 	font-variant: small-caps;
-	margin-left: 32px;
-	letter-spacing: 3px;
+	margin-left: 14px;
+	letter-spacing: 1.7px;
 }
 
-.nav_label:hover{
-	color: #CB0103;
+.nav_label:hover, .nav_label.active {
+	  /* color: #CB0103; */
+    border-bottom: 2px solid white;
+    padding-bottom: 3px;
 	/*color: black;*/
 }
 
@@ -108,7 +118,7 @@ body {
 }
 #home{
 	text-decoration: none;
-	color: white; 
+	color: white;
 	font-size: 13.6px;
 	font-variant: small-caps;
 	letter-spacing: 2px;
@@ -118,24 +128,24 @@ body {
 #home:hover{
 	/*color: #5e1a34;*/
 	color: #CB0103;
-	
+
 }
-.content{ 
-	margin: 0px;  
+.content{
+	margin: 0px;
 	width: 960px;
-	background: transparent; 
-	margin-top: 88px; 
+	background: transparent;
+	margin-top: 88px;
 	padding-bottom: 118px;
 
 }
 
-.divider{ 
-	height: 6px; 
-	width: 100%; 
+.divider{
+	height: 6px;
+	width: 100%;
 	opacity: 0.4;
-	background: transparent; 
-	text-align: center; 
-	margin: auto; 
+	background: transparent;
+	text-align: center;
+	margin: auto;
 
 }
 
@@ -153,8 +163,8 @@ body {
 }
 
 #insta{
-	margin-right: 10px; 
-	text-decoration: none; 
+	margin-right: 10px;
+	text-decoration: none;
 	color: #2c2724;
 
 }
@@ -164,7 +174,7 @@ body {
 }
 
 .link{
-	text-decoration: none; 
+	text-decoration: none;
 	font-weight: bold;
 	color: #CB0103;
 }
@@ -178,19 +188,19 @@ body {
 ///////////////////////////////*/
 
 #creature {
-	position: absolute; 
-	width: 427px; 
-	text-align: center; 
-	z-index: 1; 
-	padding-left: 200px; 
-} 
+	position: absolute;
+	width: 427px;
+	text-align: center;
+	z-index: 1;
+	padding-left: 200px;
+}
 
 #stat{
-	position: absolute; 
-	z-index: 3; 
+	position: absolute;
+	z-index: 3;
 	margin-left: 637px;
-	margin-top: 100px;  
-	width: 200px; 
+	margin-top: 100px;
+	width: 200px;
 }
 
 
@@ -260,7 +270,7 @@ body {
 #portrait{
 	float: left;
 	margin: auto;
-	margin-top: 73px; 
+	margin-top: 73px;
 }
 
 #photo_size{
@@ -271,7 +281,7 @@ body {
 #aboutMe{
 	text-align: left;
 	color: black;
-	font-size: 15px; 
+	font-size: 15px;
 	margin-left: 480px;
 	letter-spacing: .6px;
 	max-width: 470px;
@@ -297,7 +307,7 @@ body {
 }
 
 #statement{
-	text-decoration: none; 
+	text-decoration: none;
 	color: #EDE8E8;
 }
 
@@ -329,22 +339,22 @@ body {
 .proj{
 	width: 200px;
 	margin-left: 20px;
-	margin-right: 20px; 
+	margin-right: 20px;
 	float: left;
-	text-decoration: none; 
+	text-decoration: none;
 	margin-bottom: 25px;
 	display: block;
 }
 
 
 .darken{
-	text-align: center; 
+	text-align: center;
 	margin: 0px;
-	color: black; 
+	color: black;
 	letter-spacing: 2px;
 	font-variant: small-caps;
 	font-size: 13px;
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 
@@ -386,7 +396,7 @@ body {
 	color: black;
 	height: 100px;
 	font-size: 17px;
-	letter-spacing: 1.1px; 
+	letter-spacing: 1.1px;
 	margin-left: 53px;
 	margin-bottom: 19px;
 	font-variant: small-caps;
@@ -402,7 +412,7 @@ body {
 	color: black;
 	height: 50px;
 	font-size: 15px;
-	letter-spacing: 1.1px; 
+	letter-spacing: 1.1px;
 	margin:0px;
 	margin-top: 23px;
 	margin-left: 21px;
@@ -464,7 +474,7 @@ body {
 ///////////////////////////////*/
 
 #proj{
-	width: 960px; 
+	width: 960px;
 	margin: 0px;
 	padding:0px;
 	overflow: hidden;
@@ -486,13 +496,13 @@ body {
 	color: black;
 	height: 132px;
 	font-size: 15px;
-	letter-spacing: 1.1px; 
+	letter-spacing: 1.1px;
 }
 
 
 #proj_icon{
-	width: 130px; 
-	float: left; 
+	width: 130px;
+	float: left;
 	margin-right: 10px;
 	padding-bottom: 30px;
 
@@ -507,7 +517,7 @@ body {
 
 #proj_title{
 	font-size: 20px;
-	font-weight: bold; 
+	font-weight: bold;
 	max-width: 700px;
 	float:left;
 	margin: 0px;
@@ -516,11 +526,11 @@ body {
 }
 
 #proj_role{
-	font-weight: bold; 
+	font-weight: bold;
 	font-size: 17px;
 	margin: 0px;
 	max-width: 600px;
-	float: left; 
+	float: left;
 	margin-top:3px;
 }
 
@@ -543,7 +553,7 @@ body {
 }
 
 #main_vid{
-	width: 960px; 
+	width: 960px;
 	height: 540px;
 	margin: 0 auto;
 }
@@ -556,7 +566,7 @@ body {
 
 
 .caption{
-	font-size: 13px; 
+	font-size: 13px;
 	color: black;
 	margin-top: 5px;
 	float: left;
@@ -574,7 +584,7 @@ body {
 	margin: 0 auto;
 	line-height: 23px;
 	margin-top: 35px;
-	font-size: 15px; 
+	font-size: 15px;
 	color: black;
 	width: 890px;
 	letter-spacing: .5px;
@@ -585,16 +595,16 @@ body {
 	font-weight: bold;
 	font-size: 17px;
 	color: black;
-	margin-top: 50px; 
+	margin-top: 50px;
 	margin-bottom: 50px;
-	text-align: center; 
+	text-align: center;
 }
 
 #proj_documentation{
 	margin-top: 100px;
 	width: 960px;
-	height: auto; 
-	text-align: center; 
+	height: auto;
+	text-align: center;
 }
 
 #footer{
@@ -612,7 +622,7 @@ body {
 	margin-bottom: 9px;
 	font-weight: bold;
 	text-align: center;
-} 
+}
 
 #back_to_portfolio a:hover{
 	color: #CB0103;
@@ -642,7 +652,7 @@ body {
 	width: 965px;
 	height: 543px;
 	background: #1C1A1A;
-	text-align: center; 
+	text-align: center;
 }
 
 .doc{
@@ -663,7 +673,7 @@ body {
 }
 
 #html5-watermark{
-	display: none !important; 
+	display: none !important;
 }
 /*/////////PROJECT ORLA'S HIVE//////////*/
 
@@ -696,7 +706,7 @@ body {
 	margin-left: 135px;
 	float: left;
 	max-width: 310px;
-	text-align: left; 
+	text-align: left;
 
 }
 
@@ -716,7 +726,7 @@ body {
 
 
 .mojo_link{
-	text-decoration: none; 
+	text-decoration: none;
 	color: #EDE8E8;
 
 }
@@ -747,7 +757,7 @@ body {
 #pose_strip{
 	width: 300px;
 	margin: 0px;
-	margin-left: 100px;   
+	margin-left: 100px;
 
 }
 
@@ -775,7 +785,7 @@ body {
 }
 
 #rufus{
-	margin-bottom: 67px; 
+	margin-bottom: 67px;
 }
 
 #rufus_decrip{
@@ -786,30 +796,30 @@ body {
 }
 
 #rufus_ref1{
-	height: 520px; 
+	height: 520px;
 }
 
 #rufus_ref1 img{
-	width: 960px; 
-	text-align: center; 
+	width: 960px;
+	text-align: center;
 	height:480px;
 }
 
 #rufus_ref{
-	margin-top: 23px; 
+	margin-top: 23px;
 	width: 960px;
-	height: 1600px; 
+	height: 1600px;
 	margin-bottom: 100px;
 }
 
 #rufus_ref2{
 
-	width: 637px; 
+	width: 637px;
 	float: left;
 }
 
 #rufus_ref3{
-	width: 292px; 
+	width: 292px;
 	float: left;
 	margin-left: 30px;
 }
@@ -893,18 +903,18 @@ body {
 	text-decoration: none;
 	display: inline-block;
 	margin: 3.5px;
-	
+
 }
 
 .sketch_icon{
 	width: 150px;
 	height: 150px;
-	text-decoration:none; 
-	
+	text-decoration:none;
+
 }
 
 .sketch_icon:hover{
-	opacity: .8; 
+	opacity: .8;
 
 }
 
@@ -921,7 +931,7 @@ body {
 	background:#717171;
 	border-bottom:1px solid #313030;
 	margin-top: 50px;
-	margin-bottom: 50px; 
+	margin-bottom: 50px;
 }
 /*////DISNEY 2D////////
 //////////////////////*/
@@ -929,7 +939,7 @@ body {
 .sketch_title{
 	font-family:"proxima-nova";
 	font-variant: small-caps;
-	font-size: 17px; 
+	font-size: 17px;
 	color: black;
 	text-align: left;
 	letter-spacing: 0.7px;
