@@ -24,9 +24,10 @@ body {
 }
 
 #canvas{
-	margin: 10px auto; 
+	margin: 20px auto; 
 	width:960px; 
-	padding: 75px;
+	padding: 20px;
+	padding-bottom: 40px;
 }
 
 #header{
@@ -34,48 +35,36 @@ body {
 	background: transparent;
 	margin: 0px; 
 	padding: 0px;
-	max-width: 960px;
+	width: 960px;
+	height: 117px;
+	text-align: center;
 }
 
 #logo{
-	width: 172px;
-	height: 82px;
-	float: left;
-	color: black;
-	font-weight: bold;
-	font-size: 37px;
-}
-
-#logo p{
-	margin: 0px;
-	padding: 0px;
-	line-height: 27px;
-	font-variant: small-caps;
-	letter-spacing: 2.7px; 
- 
-
-}
-
-
-#logo p:hover{
-	cursor: default;
+	width: 255px;
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 7px;
 }
 
 #title {
-	font-size: 24px;
-	letter-spacing: 1.4px;
+	font-size: 12px;
+	letter-spacing: 4px;
 	color: white;
 	font-variant: small-caps;
-	max-width: 100px;
-	max-height: 20px;
-	font-weight: normal;
+	max-width: 600px;
+	font-weight: lighter;
+	margin: auto;
 
 }
 
 
 #nav{
-	float: right;
-	margin-top: 61px;
+	width: 500px;
+	margin: auto;
+	background-color: #CCC099;
+	position: relative;
+	z-index: 1;
 }
 
 .nav_label{
@@ -83,12 +72,16 @@ body {
 	text-decoration: none; 
 	font-size: 17px;
 	font-variant: small-caps;
-	margin-left: 32px;
+	margin-left: 16px;
+	margin-right: 16px;
 	letter-spacing: 3px;
+	position: relative;
+	z-index: 2;
 }
 
 .nav_label:hover{
 	color: #CB0103;
+	text-decoration: underline;
 	/*color: black;*/
 }
 
@@ -124,7 +117,8 @@ body {
 	margin: 0px;  
 	width: 960px;
 	background: transparent; 
-	margin-top: 88px; 
+	margin-top: -35px; 
+	padding-top: 100px;
 	padding-bottom: 118px;
 
 }
@@ -172,6 +166,7 @@ body {
 .link:hover{
 	color: white;
 }
+
 
 /*///////////////////////////////
 ///////////// HOME //////////////
@@ -247,15 +242,10 @@ body {
 ///////////////////////////////*/
 
 #about{
-	/*color: rgba(89,83,66,1);
-	color: #5e1a34;*/
-	color: #CB0103;
+	padding-top: 10px;
+	height: 532px;
 }
 
-#about:hover{
-	/*color: black;*/
-	color: #CB0103;
-}
 
 #portrait{
 	float: left;
@@ -272,7 +262,8 @@ body {
 	text-align: left;
 	color: black;
 	font-size: 15px; 
-	margin-left: 480px;
+	float: left;
+	margin-left: 115px;
 	letter-spacing: .6px;
 	max-width: 470px;
 	line-height: 24px;
@@ -313,26 +304,22 @@ body {
 .portfolio{
 	width: 960px;
 	margin: auto;
-	margin-top: 100px;
 	height: auto;
-	margin-bottom: 100px;
 }
 
-#
-
-.row_proj{
+#row_proj{
 	width: 965px;
-	height: 424px;
+	height: 471px;
 	margin-top: 63px;
 }
 
 .proj{
-	width: 200px;
-	margin-left: 20px;
-	margin-right: 20px; 
+	width: 230px;
+	margin-left: 5px;
+	margin-right: 5px; 
 	float: left;
 	text-decoration: none; 
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 	display: block;
 }
 
@@ -350,8 +337,9 @@ body {
 
 .white_bg {
 	background: white;
-	height: 200px;
+	height: 230px;
 }
+
 
 .proj:hover p {
 	color: #CB0103;
@@ -362,9 +350,11 @@ body {
 }
 
 .proj_icon{
-	width: 200px;
+	width: 230px;
 	margin: 0px;
 }
+
+
 
 .proj p {
 	margin: 15px 0 0;
@@ -375,9 +365,9 @@ body {
 
 #artist_demo_reel{
 	width:960px;
-	height: 480px;
+	height: 502px;
 	text-align: center;
-	margin-top: -87px;
+	margin-top: 7px;
 	margin-bottom: 49px;
 
 }
@@ -883,7 +873,7 @@ body {
 #sketchbook{
 	margin:auto;
 	width: 650px;
-	margin-top: 100px;
+	margin-top: 50px;
 	color: black;
 	text-align: center;
 }
