@@ -40,6 +40,15 @@ body {
 	text-align: center;
 }
 
+#index_header{
+	height:79px; 
+	background: transparent;
+	margin: 0px; 
+	padding: 0px;
+	height: 117px;
+	text-align: center;
+}
+
 #logo{
 	width: 255px;
 	margin-left: auto; 
@@ -116,6 +125,15 @@ body {
 .content{ 
 	margin: 0px;  
 	width: 960px;
+	background: transparent; 
+	margin-top: -35px; 
+	padding-top: 100px;
+	padding-bottom: 118px;
+
+}
+
+#index_content{ 
+	margin: 0px;  
 	background: transparent; 
 	margin-top: -35px; 
 	padding-top: 100px;
@@ -302,7 +320,7 @@ body {
 
 
 .portfolio{
-	width: 960px;
+	/*width: 960px;*/
 	margin: auto;
 	height: auto;
 }
@@ -311,6 +329,7 @@ body {
 	width: 965px;
 	height: 471px;
 	margin-top: 63px;
+	margin: auto;
 }
 
 .proj{
@@ -364,8 +383,8 @@ body {
 
 
 #artist_demo_reel{
-	width:960px;
-	height: 502px;
+	/*width:960px;*/
+	height: 338px;
 	text-align: center;
 	margin-top: 7px;
 	margin-bottom: 49px;
