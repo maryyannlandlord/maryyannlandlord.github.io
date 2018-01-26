@@ -179,6 +179,7 @@ body {
 	text-decoration: none; 
 	font-weight: bold;
 	color: #CB0103;
+	
 }
 
 .link:hover{
@@ -325,15 +326,16 @@ body {
 	height: auto;
 }
 
-#row_proj{
-	width: 965px;
-	height: 709px;
-	margin-top: 63px;
+.row_proj{
+	width: 1027px;
+	height: auto;
+	padding-bottom: 45px;
 	margin: auto;
+	overflow: auto;
 }
 
 .proj{
-	width: 230px;
+	width: 195px;
 	margin-left: 5px;
 	margin-right: 5px; 
 	float: left;
@@ -356,7 +358,7 @@ body {
 
 .white_bg {
 	background: white;
-	height: 230px;
+	height: 195px;
 }
 
 
@@ -369,7 +371,7 @@ body {
 }
 
 .proj_icon{
-	width: 230px;
+	width: 195px;
 	margin: 0px;
 }
 
@@ -378,6 +380,15 @@ body {
 .proj p {
 	margin: 15px 0 0;
 	padding: 0;
+}
+
+.section {
+	font-size: 21px;
+	margin-left: 30px;
+	margin-bottom: 17px;
+	color: black;
+	letter-spacing: 1px;
+	font-variant: small-caps;
 }
 
 
@@ -479,12 +490,9 @@ body {
 	overflow: hidden;
 }
 
+
 #proj_process{
-	width: 960px;
-	margin-bottom: 120px;
 	text-align: center;
-}
-#proj_process{
 	width: 960px;
 	height: auto;
 	margin-top: 120px;
@@ -727,7 +735,6 @@ body {
 .mojo_link{
 	text-decoration: none; 
 	color: #EDE8E8;
-
 }
 
 .mojo_link:hover{
