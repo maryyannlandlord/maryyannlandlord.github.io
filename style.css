@@ -553,6 +553,14 @@ body {
 	margin: 0px;
 }
 
+
+#github{
+	font-size: 14px;
+	margin-top:2px;
+	margin: 0px;
+}
+
+
 #break_down{
 	font-size: 14px;
 	margin: 0px;
@@ -567,7 +575,7 @@ body {
 
 .image{
 	margin:auto;
-	width: 927px;
+	width: 700px;
 	margin-bottom: 12px;
 }
 
