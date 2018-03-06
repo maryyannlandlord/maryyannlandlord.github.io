@@ -1,8 +1,8 @@
 body { 
 	/*
 	background: rgb(239,197,67);*/
-	/*background: #D5BD72;*/
-	background: #CCC099;
+	/*background: #D5BD72;#CCC099*/
+	background: #eacfb4;
 	color: white;
 	margin: 0px;
 	padding: 0px; 
@@ -71,7 +71,7 @@ body {
 #nav{
 	width: 500px;
 	margin: auto;
-	background-color: #CCC099;
+	background-color: #eacfb4;
 	position: relative;
 	z-index: 1;
 }
@@ -327,7 +327,7 @@ body {
 }
 
 .row_proj{
-	width: 1027px;
+	width: 1047px;
 	height: auto;
 	padding-bottom: 45px;
 	margin: auto;
@@ -336,11 +336,11 @@ body {
 
 .proj{
 	width: 195px;
-	margin-left: 5px;
-	margin-right: 5px; 
+	margin-left: 7px;
+	margin-right: 7px; 
 	float: left;
 	text-decoration: none; 
-	margin-bottom: 5px;
+	margin-bottom: 14px;
 	display: block;
 }
 
