@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Maryyann Landlord</title>
+		<meta name="Maryyann Landlord"
+          content="Animation. Research. Interaction.">
+        <meta property="og:image" content="C:\Maryyann\maryyannlandlord.github.io\Portfolio\MemorySlugs\icon.png" />
+		<meta property="og:title" content="Maryyann Landlord" />
+		<meta name="description" content="Animation. Research. Interaction" />
+		<link rel="stylesheet" href="style.css">
+		<script src = "jquery-1.11.0.min.js"></script>
+		<script src = "jquery.cycle.lite.js"></script>
+		<script src = "app.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+    	<!-- load Galleria -->
+   		<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js"></script>
+    	
+
+
+
+
+		<link href="lightbox.css" rel="stylesheet" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+
+
+	<body>
+		<div id = "canvas">
+		
+			<div id = "index_header"> 
+
+				<div style = "padding-top: 0px; padding-bottom: 20px; width: 400px; margin: auto; text-align: center;">
+					
+					<a href= "index.html" style = "text-decoration: none; width: 400px">
+						<p style = "font-family:'TheDoctor'; color: black; font-weight: 500;  font-size: 61px;  margin:auto;width:400px">Maryyann Landlord</p>
+						<p id = "title">ANIMATION - RESEARCH - INTERACTION</p>
+					</a>
+				</div>
+
+				<div id = "nav">
+					<a href="Index.html" class = "nav_label {% if page.pageName == "index" %} active {% endif %}">Portfolio</a>
+					<a href="Sketches.html" class = "nav_label {% if page.pageName == "sketches" %} active {% endif %}">Sketches</a>
+					<a href="About.html" class = "nav_label nav_label {% if page.pageName == "about" %} active {% endif %}">About</a>
+					<a href="Resume.pdf" target = "blank" class = "nav_label">Resume</a>
+				</div>
+
+			</div>
+
+
+			<div id = "pageContent"> 
+
+				{{ content }}
+			
+			</div>
+
+			<div id = "contact" > 
+
+				<p>
+				<a id = "insta" target = "_blank" href = "https://www.instagram.com/l0nelypeach/">
+				<img class = "socialIcon" src = "insta_icon2.png"> Instagram</a>
+
+				<img class = "socialIcon" src = "email_icon2.png"> mlandlor@gmail.com
+
+				</p>
+
+			</div>
+			
+		</div>	
+
+		<script src = "lightbox.js"></script>
+		<script>
+			lightbox.option({
+				'fadeDuration': 0, 
+				'resizeDuration': 0
+			});
+		</script>
+
+	</body>
+</html>
