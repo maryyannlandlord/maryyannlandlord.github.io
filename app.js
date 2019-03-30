@@ -1,8 +1,8 @@
 $(function() {
 
-// Project page other projects 
+// Project page other projects
    $('.other_proj_photo').each(function() {
-      $(this).wrap('<figure class="DarkTint"></figure>');
+      $(this).wrap('<div class="DarkTint DarkTintBig"></div>');
     });
 
    $('.other_proj a').hover(function(){
@@ -16,13 +16,13 @@ $(function() {
 // Index page projects
 
     $('.proj_photo').each(function() {
-      $(this).wrap('<figure class="DarkTint2"></figure>');
+      $(this).wrap('<div class="DarkTint"></div>');
     });
 
 // Index page Wetware
 
     $('.proj_photo_full').each(function() {
-      $(this).wrap('<figure class="DarkTint3"></figure>');
+      $(this).wrap('<div class="DarkTint DarkTintBigger"></div>');
     });
 
 //Index page names
@@ -41,8 +41,8 @@ $(function() {
 
 // Reel
 
-   $('#reelCover').wrap('<figure id = "darkReel"></figure>');
-   $('.projVideo').wrap('<figure id = "darkVideo"></figure>');
+   $('#reelCover').wrap('<div id = "darkReel"></div>');
+   $('.projVideo').wrap('<div id = "darkVideo"></div>');
 
    $('#reelWrapper').mouseover(function(){
 
@@ -53,7 +53,7 @@ $(function() {
     $('#reelWrapper').mouseout(function(){
 
     $('.playButton').css("opacity","0");
-    $('#reelCover').css("opacity", "1"); 
+    $('#reelCover').css("opacity", "1");
    });
 
     $('.videoWrapper').mouseover(function(){
@@ -65,7 +65,7 @@ $(function() {
     $('.videoWrapper').mouseout(function(){
 
     $('.playButton').css("opacity","0");
-    $('.projVideo', this).css("opacity", "1"); 
+    $('.projVideo', this).css("opacity", "1");
    });
 
     $('.videoWrapper_2').mouseover(function(){
@@ -77,28 +77,28 @@ $(function() {
     $('.videoWrapper_2').mouseout(function(){
 
     $('.playButton').css("opacity","0");
-    $('.projVideo', this).css("opacity", "1"); 
+    $('.projVideo', this).css("opacity", "1");
    });
 
-    var videoOpen = false; 
+    var videoOpen = false;
     var video2Open = false;
 
     $('#reelWrapper').click(function(){
       if (videoOpen == false) {
-        $("#reelWrapper").html("<iframe src='https://player.vimeo.com/video/326499961?autoplay=1&autopause=0' width='1662' height='945' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe>");
-        videoOpen = true; 
+        $("#reelWrapper").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499961?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
+        videoOpen = true;
         };
       });
 
     $('.videoWrapper').click(function(){
-      if (videoOpen == false) {       
-        $("#yokai").html("<iframe src='https://player.vimeo.com/video/252673806?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe>");
-        $("#maad").html("<iframe src='https://player.vimeo.com/video/326502284?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe>");
-        $("#momento1").html("<iframe src='https://player.vimeo.com/video/326499057?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe>");
-        $("#steelcase").html("<iframe src='https://player.vimeo.com/video/258761583?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe>");
-       
-        
-        videoOpen = true; 
+      if (videoOpen == false) {
+        $("#yokai").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/252673806?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
+        $("#maad").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326502284?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
+        $("#momento1").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499057?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
+        $("#steelcase").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/258761583?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
+
+
+        videoOpen = true;
         };
       });
 
@@ -106,9 +106,9 @@ $(function() {
       $('.videoWrapper_2').click(function(){
       if (video2Open == false) {
          //$("#momento2").html("<video autoplay controls style = 'width: 1500px; height: 844px' > <source src = 'Portfolio/Momento/Video2.mp4' type = 'video/mp4'></video>");
-          $("#momento2").html("<iframe src='https://player.vimeo.com/video/326499370?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe>");
-        
-        video2Open = true; 
+          $("#momento2").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499370?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
+
+        video2Open = true;
         };
       });
 
@@ -131,6 +131,3 @@ var id = data[0];
 html5GalleryObjects.objects[0].isPaused = true;
 html5GalleryObjects.objects[0].slideRun(id, false, true);
 };
-
-
-
