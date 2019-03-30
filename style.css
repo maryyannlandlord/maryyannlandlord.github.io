@@ -673,14 +673,17 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
-  .projVideo, #reelCover { opacity: .4!important; }
-  .playButton { opacity: 1!important; }
+@media screen and (max-width: 1024px) {
   .playButton img, img.playButton { width: 75px!important; }
   .other_proj.title { font-size: 18px; }
+  #videoTitle { font-size: 25px; }
+}
+
+@media screen and (pointer: coarse) {
+  .projVideo, #reelCover { opacity: .4!important; }
+  .playButton { opacity: 1!important; }
   .other_proj img { opacity: 0.4!important; }
   .other_proj .text_wrapper { opacity: 1!important; }
-  #videoTitle { font-size: 25px; }
 }
 
 
