@@ -678,6 +678,9 @@ body {
   .playButton { opacity: 1!important; }
   .playButton img, img.playButton { width: 75px!important; }
   .other_proj.title { font-size: 18px; }
+  .other_proj img { opacity: 0.4!important; }
+  .other_proj .text_wrapper { opacity: 1!important; }
+  #videoTitle { font-size: 25px; }
 }
 
 
