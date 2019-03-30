@@ -166,7 +166,9 @@ body {
     padding-right: 10px;
     box-sizing: border-box;
   }
+}
 
+@media screen and (max-width: 768px) {
   .proj_column {
     grid-column: span 2;
   }
