@@ -157,6 +157,8 @@ body {
   grid-column: span 2;
 }
 
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
 @media screen and (max-width: 768px) {
   .proj_wrapper {
     width: 100%;
@@ -239,11 +241,20 @@ body {
 
 	width:1662px;
 	margin:auto;
-	padding-top:30px;
+	padding-top:10px;
 	padding-bottom:100px;
 	text-align: center;
 	overflow:auto;
 
+}
+
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
 }
 
 .content h3{
@@ -391,10 +402,18 @@ body {
 ///////////////////////////////*/
 
 #about{
-	padding-top: 10px;
-	height: 532px;
-	width:930px;
 	margin:auto;
+  width: 930px;
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+      width: 100%;
+  }
+
+  #aboutMe {
+      font-size: 24px;
+  }
 }
 
 
@@ -406,7 +425,6 @@ body {
 
 #aboutMe{
 	text-align: center;
-	float: left;
 	margin:auto;
 
 	color: #444;
@@ -627,7 +645,6 @@ body {
 
 
 .videoWrapper{
-	width: 1500px;
 	margin: 0px;
 	margin:auto;
 	text-align:center;
@@ -637,7 +654,6 @@ body {
 }
 
 .videoWrapper_2{
-	width: 1500px;
 	margin: 0px;
 	margin:auto;
 	text-align:center;
@@ -646,7 +662,7 @@ body {
 	overflow: hidden;
 }
 .projVideo{
-	width: 1500px;
+  width: 100%;
 	margin:auto;
 	display: block;
 	opacity:1;
@@ -855,7 +871,6 @@ body {
 
 .other_proj_photo{
 	width:100%;
-	height: 375px;
 	transition: opacity .4s linear;
 	transition-timing-function: ease-in-out;
 }
@@ -886,13 +901,16 @@ body {
 	float:left;
 	margin: 0px;
 	background: black;
-	height:844px;
 }
 
 .DarkTint{
   margin: 0px;
 	background: black;
   line-height: 19px; /* fixes the black border bug */
+}
+
+.DarkTintBig {
+  line-height: 7px;
 }
 
 .text_wrapper{
