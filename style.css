@@ -112,6 +112,17 @@ body {
 	z-index: 2;
 }
 
+@media screen and (max-width: 500px) {
+    #nav {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .nav_label {
+        margin: 0 6px;
+    }
+}
+
 .nav_label.active{
 	color:#111;
 
