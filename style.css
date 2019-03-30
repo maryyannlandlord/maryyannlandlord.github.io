@@ -679,7 +679,7 @@ body {
   #videoTitle { font-size: 25px; }
 }
 
-@media screen and (pointer: coarse) {
+@media screen and (any-pointer: coarse) {
   .projVideo, #reelCover { opacity: .4!important; }
   .playButton { opacity: 1!important; }
   .other_proj img { opacity: 0.4!important; }
