@@ -5,26 +5,26 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #020000; 
+  background: #020000;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #b497ab; 
+  background: #b497ab;
   border-radius: 2px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #945d83 
+  background: #945d83
 }
 
-body { 
+body {
 
 	background: #f3f3f3;
-	color: white;
+	color: #111;
 	margin: 0px;
-	padding: 0px; 
+	padding: 0px;
 	font-family: 'proxima-nova';
 	font-size: 12px;
 
@@ -44,21 +44,21 @@ body {
 	src: url(TheDoctor.ttf) format('opentype');
 }
 
-#canvas{
-	margin: 20px auto;
-	padding: 20px;
-	padding-left:0px;
-	padding-right:0px; 
-	padding-top:0px;
-	padding-bottom:0px;
-	margin-bottom: 0px;
-	color: #111;
-}
+/* #canvas{ */
+/* 	margin: 20px auto; */
+/* 	padding: 20px; */
+/* 	padding-left:0px; */
+/* 	padding-right:0px;  */
+/* 	padding-top:0px; */
+/* 	padding-bottom:0px; */
+/* 	margin-bottom: 0px; */
+/* 	color: #111; */
+/* } */
 
 #header{
-	height:79px; 
+	height:79px;
 	background: transparent;
-	margin: 0px; 
+	margin: 0px;
 	padding: 0px;
 	width: 960px;
 	height: 117px;
@@ -67,16 +67,15 @@ body {
 
 #index_header{
 	background: transparent;
-	margin: 0px; 
-	padding: 0px;
-	height: 187px;
+	margin: 0px;
+	padding: 20px 0;
 	text-align: center;
 }
 
 #logo{
 	width: 255px;
-	margin-left: auto; 
-	margin-right: auto; 
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 7px;
 }
 
@@ -84,7 +83,7 @@ body {
 	font-size: 12px;
 	letter-spacing: 4px;
 	color: #b497ab;
-	
+
 	max-width: 600px;
 	font-weight: lighter;
 	margin: auto;
@@ -103,7 +102,7 @@ body {
 
 .nav_label{
 	color: #999;
-	text-decoration: none; 
+	text-decoration: none;
 	font-size: 15px;
 	font-variant: small-caps;
 	margin-left: 16px;
@@ -115,7 +114,7 @@ body {
 
 .nav_label.active{
 	color:#111;
-	
+
 }
 
 .nav_label:hover{
@@ -123,7 +122,6 @@ body {
 }
 
 .portfolio{
-	width: 1682px;
 	margin: auto;
 	height: auto;
 	padding-top:60px;
@@ -138,27 +136,41 @@ body {
 }
 
 .proj_wrapper{
-	height: auto;
 	padding-bottom: 45px;
-	margin: auto;
-	overflow: auto;
 	text-align: center;
 	color: #f3f3f3;
 	font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1440px;
+  margin: 0 auto;
 }
 
-
 .proj_column{
-	float: left; 
-	width: 50%;
-	padding: 10px; 
-	height: auto; 
+	padding: 10px;
 	box-sizing: border-box;
 	position:relative;
+  grid-column: span 1;
+}
+
+.proj_column.wide {
+  grid-column: span 2;
+}
+
+@media screen and (max-width: 768px) {
+  .proj_wrapper {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .proj_column {
+    grid-column: span 2;
+  }
 }
 
 .proj_photo{
-
 	width:100%;
 	margin:0;
 	padding:0;
@@ -177,10 +189,10 @@ body {
 
 
 .proj_title{
-	text-align: center; 
-	position: absolute; 
+	text-align: center;
+	position: absolute;
 	color: white;
-	text-decoration: none; 
+	text-decoration: none;
 	border-bottom: 1px solid white;
 
 	left:50%;
@@ -195,8 +207,8 @@ body {
 
 #proj_wrapper:after{
 	content: "";
-	display:table; 
-	clear: both; 
+	display:table;
+	clear: both;
 }
 
 
@@ -211,7 +223,7 @@ body {
 }
 #home{
 	text-decoration: none;
-	color: white; 
+	color: white;
 	font-size: 13.6px;
 	font-variant: small-caps;
 	letter-spacing: 2px;
@@ -221,9 +233,9 @@ body {
 #home:hover{
 	/*color: #5e1a34;*/
 	color: #CB0103;
-	
+
 }
-.content{ 
+.content{
 
 	width:1662px;
 	margin:auto;
@@ -244,20 +256,21 @@ body {
 	width: auto;
 }
 
-#index_content{ 
-	margin: 0px;  
-	background: transparent; 
+#index_content{
+  width: 100%;
+	margin: 0px;
+	background: transparent;
 	padding-bottom: 118px;
 
 }
 
-.divider{ 
-	height: 6px; 
-	width: 100%; 
+.divider{
+	height: 6px;
+	width: 100%;
 	opacity: 0.4;
-	background: transparent; 
-	text-align: center; 
-	margin: auto; 
+	background: transparent;
+	text-align: center;
+	margin: auto;
 
 }
 
@@ -282,8 +295,8 @@ body {
 }
 
 #insta{
-	margin-right: 10px; 
-	text-decoration: none; 
+	margin-right: 10px;
+	text-decoration: none;
 	color: #f3f3f3;
 }
 
@@ -293,10 +306,10 @@ body {
 }
 
 .link{
-	text-decoration: none; 
+	text-decoration: none;
 	font-weight: bold;
 	color: #b497ab;
-	
+
 }
 
 .link:hover{
@@ -309,19 +322,19 @@ body {
 ///////////////////////////////*/
 
 #creature {
-	position: absolute; 
-	width: 427px; 
-	text-align: center; 
-	z-index: 1; 
-	padding-left: 200px; 
-} 
+	position: absolute;
+	width: 427px;
+	text-align: center;
+	z-index: 1;
+	padding-left: 200px;
+}
 
 #stat{
-	position: absolute; 
-	z-index: 3; 
+	position: absolute;
+	z-index: 3;
 	margin-left: 637px;
-	margin-top: 100px;  
-	width: 200px; 
+	margin-top: 100px;
+	width: 200px;
 }
 
 
@@ -394,10 +407,10 @@ body {
 #aboutMe{
 	text-align: center;
 	float: left;
-	margin:auto; 
+	margin:auto;
 
 	color: #444;
-	font-size: 29px; 
+	font-size: 29px;
 	line-height: 1.4;
 	letter-spacing: .2px;
 	font-weight:600;
@@ -424,7 +437,7 @@ body {
 }
 
 #statement{
-	text-decoration: none; 
+	text-decoration: none;
 	color: #EDE8E8;
 }
 
@@ -437,13 +450,13 @@ body {
 ///////////////////////////////*/
 
 .darken{
-	text-align: center; 
+	text-align: center;
 	margin: 0px;
-	color: black; 
+	color: black;
 	letter-spacing: 2px;
 	font-variant: small-caps;
 	font-size: 13px;
-	text-decoration: none; 
+	text-decoration: none;
 }
 
 
@@ -488,8 +501,7 @@ body {
 	margin:auto;
 	background: #020000;
 	margin:0px;
-	padding-top:20px;
-	padding-bottom:30px;
+  padding: 30px 0;
 }
 
 
@@ -497,7 +509,7 @@ body {
 	color: black;
 	height: 100px;
 	font-size: 17px;
-	letter-spacing: 1.1px; 
+	letter-spacing: 1.1px;
 	margin-left: 53px;
 	margin-bottom: 19px;
 	font-variant: small-caps;
@@ -513,7 +525,7 @@ body {
 	color: black;
 	height: 50px;
 	font-size: 15px;
-	letter-spacing: 1.1px; 
+	letter-spacing: 1.1px;
 	margin:0px;
 	margin-top: 23px;
 	margin-left: 21px;
@@ -567,17 +579,15 @@ body {
 }*/
 
 #reelWrapper{
-	position: relative; 
-	margin: auto; 
-	width: 1662px; 
-	text-align:center; 
+	position: relative;
+	margin: auto;
+	text-align:center;
 	overflow: hidden;
-	margin-top:10px;
 	cursor: pointer;
 }
 
 
-.playButton{ 
+.playButton{
 	position: absolute;
 
 	left:50%;
@@ -604,31 +614,35 @@ body {
 
 
 #reelCover{
-	width: 1662px;
-	margin-bottom: 70px;
+  width: 100%;
 	opacity:1;
-	
+
 	transition: opacity .4s linear;
 	transition-timing-function: ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+  #reelCover { height: auto; }
+}
+
+
 .videoWrapper{
 	width: 1500px;
-	margin: 0px; 
+	margin: 0px;
 	margin:auto;
-	text-align:center; 
+	text-align:center;
 	cursor: pointer;
-	position: relative; 
+	position: relative;
 	overflow: hidden;
 }
 
 .videoWrapper_2{
 	width: 1500px;
-	margin: 0px; 
+	margin: 0px;
 	margin:auto;
-	text-align:center; 
+	text-align:center;
 	cursor: pointer;
-	position: relative; 
+	position: relative;
 	overflow: hidden;
 }
 .projVideo{
@@ -648,7 +662,7 @@ body {
 
 
 #proj{
-	width: 960px; 
+	width: 960px;
 	margin: 0px;
 	padding:0px;
 	overflow: hidden;
@@ -668,13 +682,13 @@ body {
 	color: black;
 	height: 132px;
 	font-size: 15px;
-	letter-spacing: 1.1px; 
+	letter-spacing: 1.1px;
 }
 
 
 #proj_icon{
-	width: 130px; 
-	float: left; 
+	width: 130px;
+	float: left;
 	margin-right: 10px;
 	padding-bottom: 30px;
 
@@ -699,7 +713,7 @@ body {
 }
 
 #credits_wrapper{
-	margin:auto; 
+	margin:auto;
 	text-align:center;
 	max-width: 900px;
 	font-size: 18px;
@@ -714,10 +728,10 @@ body {
 }
 
 #credits_wrapper button{
-	border:none; 
+	border:none;
 	background-color:#f3f3f3;
 	padding: 0px;
-	cursor: pointer; 
+	cursor: pointer;
 	outline: none;
 }
 
@@ -728,10 +742,10 @@ body {
 }
 
 .credits_column{
-	float: left; 
+	float: left;
 	width: 33.33%;
-	padding: 10px; 
-	height: auto; 
+	padding: 10px;
+	height: auto;
 	/*background-color: #e4e4e6;*/
 	box-sizing: border-box;
 }
@@ -760,14 +774,14 @@ body {
 
 #credits:after{
 	content: "";
-	display:table; 
-	clear: both; 
+	display:table;
+	clear: both;
 }
 
 
 
 #galleries_wrapper{
-	margin:auto; 
+	margin:auto;
 	text-align:center;
 	max-width: 1500px;
 	margin-top: 45px;
@@ -795,7 +809,7 @@ body {
 }
 
 .photo_wrapper.x2{
-	float: left; 
+	float: left;
 	width: 50%;
 
 }
@@ -828,7 +842,7 @@ body {
 
 .other_proj{
 	width:25%;
-	
+
 	display:inline;
 	float:left;
 	padding:6px;
@@ -857,7 +871,7 @@ body {
 	padding: 0;
 	margin: 0;
 	width: auto;
-	border-bottom: 1px solid white; 
+	border-bottom: 1px solid white;
 }
 
 #darkReel{
@@ -865,7 +879,6 @@ body {
 	float:left;
 	margin: 0px;
 	background: black;
-	height:945px;
 }
 
 #darkVideo{
@@ -877,34 +890,16 @@ body {
 }
 
 .DarkTint{
-	overflow: hidden;
-    float: left;
-    margin: 0px;
+  margin: 0px;
 	background: black;
-	height: 375px;
-}
-
-.DarkTint2{
-	overflow: hidden;
-    float: left;
-    margin: 0px;
-	background: black;
-	height: 270px;
-}
-
-.DarkTint3{
-	overflow: hidden;
-    float: left;
-    margin: 0px;
-	background: black;
-	height: 548px;
+  line-height: 19px; /* fixes the black border bug */
 }
 
 .text_wrapper{
-	text-align: center; 
+	text-align: center;
 	position: absolute;
 	opacity: 0;
-	
+
 	left:50%;
 	top:50%;
 	transform: translate(-50%,-50%);
@@ -918,7 +913,7 @@ body {
 
 .title{
 	font-size: 31px;
-	font-weight: 400; 
+	font-weight: 400;
 	color: #945d83;
 	padding-bottom: 7px;
     border-bottom: 1px solid #945d83;
@@ -947,13 +942,13 @@ body {
 }
 
 .exhibit{
-	margin:auto; 
+	margin:auto;
 	text-align: center;
 
 }
 
 #role{
-	font-weight: 200; 
+	font-weight: 200;
 	font-size: 18px;
 	margin:0px;
 	color: #999;
@@ -980,7 +975,7 @@ body {
 }
 
 #main_vid{
-	width: 960px; 
+	width: 960px;
 	height: 540px;
 	margin: 0 auto;
 }
@@ -993,7 +988,7 @@ body {
 
 
 .caption{
-	font-size: 13px; 
+	font-size: 13px;
 	color: black;
 	margin-top: 5px;
 	float: left;
@@ -1011,7 +1006,7 @@ body {
 	margin: 0 auto;
 	line-height: 23px;
 	margin-top: 35px;
-	font-size: 15px; 
+	font-size: 15px;
 	color: black;
 	width: 890px;
 	letter-spacing: .5px;
@@ -1022,16 +1017,16 @@ body {
 	font-weight: bold;
 	font-size: 17px;
 	color: black;
-	margin-top: 50px; 
+	margin-top: 50px;
 	margin-bottom: 50px;
-	text-align: center; 
+	text-align: center;
 }
 
 #proj_documentation{
 	margin-top: 100px;
 	width: 960px;
-	height: auto; 
-	text-align: center; 
+	height: auto;
+	text-align: center;
 }
 
 #footer{
@@ -1051,7 +1046,7 @@ body {
 	margin-bottom: 9px;
 	font-weight: bold;
 	text-align: center;
-} 
+}
 
 #back_to_portfolio a:hover{
 	color: #CB0103;
@@ -1081,7 +1076,7 @@ body {
 	width: 965px;
 	height: 543px;
 	background: #1C1A1A;
-	text-align: center; 
+	text-align: center;
 }
 
 .doc{
@@ -1102,7 +1097,7 @@ body {
 }
 
 #html5-watermark{
-	display: none !important; 
+	display: none !important;
 }
 /*/////////PROJECT ORLA'S HIVE//////////*/
 
@@ -1135,7 +1130,7 @@ body {
 	margin-left: 135px;
 	float: left;
 	max-width: 310px;
-	text-align: left; 
+	text-align: left;
 
 }
 
@@ -1155,7 +1150,7 @@ body {
 
 
 .mojo_link{
-	text-decoration: none; 
+	text-decoration: none;
 	color: #EDE8E8;
 }
 
@@ -1185,7 +1180,7 @@ body {
 #pose_strip{
 	width: 300px;
 	margin: 0px;
-	margin-left: 100px;   
+	margin-left: 100px;
 
 }
 
@@ -1213,7 +1208,7 @@ body {
 }
 
 #rufus{
-	margin-bottom: 67px; 
+	margin-bottom: 67px;
 }
 
 #rufus_decrip{
@@ -1224,30 +1219,30 @@ body {
 }
 
 #rufus_ref1{
-	height: 520px; 
+	height: 520px;
 }
 
 #rufus_ref1 img{
-	width: 960px; 
-	text-align: center; 
+	width: 960px;
+	text-align: center;
 	height:480px;
 }
 
 #rufus_ref{
-	margin-top: 23px; 
+	margin-top: 23px;
 	width: 960px;
-	height: 1600px; 
+	height: 1600px;
 	margin-bottom: 100px;
 }
 
 #rufus_ref2{
 
-	width: 637px; 
+	width: 637px;
 	float: left;
 }
 
 #rufus_ref3{
-	width: 292px; 
+	width: 292px;
 	float: left;
 	margin-left: 30px;
 }
@@ -1324,7 +1319,7 @@ body {
 
 #galleria{
 	width:1662px;
-	height: 900px; 
+	height: 900px;
 	margin:auto;
 }
 
@@ -1336,18 +1331,18 @@ body {
 	text-decoration: none;
 	display: inline-block;
 	margin: 3.5px;
-	
+
 }
 
 .sketch_icon{
 	width: 150px;
 	height: 150px;
-	text-decoration:none; 
-	
+	text-decoration:none;
+
 }
 
 .sketch_icon:hover{
-	opacity: .8; 
+	opacity: .8;
 
 }
 
@@ -1364,7 +1359,7 @@ body {
 	background:#717171;
 	border-bottom:1px solid #313030;
 	margin-top: 50px;
-	margin-bottom: 50px; 
+	margin-bottom: 50px;
 }
 /*////DISNEY 2D////////
 //////////////////////*/
@@ -1372,7 +1367,7 @@ body {
 .sketch_title{
 	font-family:"proxima-nova";
 	font-variant: small-caps;
-	font-size: 17px; 
+	font-size: 17px;
 	color: black;
 	text-align: left;
 	letter-spacing: 0.7px;

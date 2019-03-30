@@ -15,11 +15,7 @@
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
     	<!-- load Galleria -->
    		<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js"></script>
-    	
-
-
-
+    	<script src="/galleria.classic.min.js"></script>
 
 		<link href="lightbox.css" rel="stylesheet" />
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
@@ -43,52 +39,48 @@
 
 
 	<body>
-		<div id = "canvas">
-		
-			<div id = "index_header"> 
+    <div id = "index_header">
 
-				<div style = "padding-top: 0px; padding-bottom: 20px; width: 400px; margin: auto; text-align: center;">
-					
-					<a href= "index.html" style = "text-decoration: none; width: 400px">
-						<p style = "font-family:'TheDoctor'; color: black; font-weight: 500;  font-size: 61px;  margin:auto; width:400px; height:96px; display:block">Maryyann Landlord</p>
-						<p id = "title">ANIMATION - RESEARCH - INTERACTION</p>
-					</a>
-				</div>
+      <div style = "padding-top: 0px; padding-bottom: 20px; width: 400px; margin: auto; text-align: center;">
 
-				<div id = "nav">
-					<a href="index.html" class = "nav_label {% if page.pageName == "index" %} active {% endif %}">Portfolio</a>
-					<a href="Sketches.html" class = "nav_label {% if page.pageName == "sketches" %} active {% endif %}">Sketches</a>
-					<a href="About.html" class = "nav_label nav_label {% if page.pageName == "about" %} active {% endif %}">About</a>
-					<a href="Resume.pdf" target = "blank" class = "nav_label">Resume</a>
-				</div>
+        <a href= "index.html" style = "text-decoration: none; width: 400px">
+          <p style = "font-family:'TheDoctor'; color: black; font-weight: 500;  font-size: 61px;  margin:auto; width:400px; height:96px; display:block">Maryyann Landlord</p>
+          <p id = "title">ANIMATION - RESEARCH - INTERACTION</p>
+        </a>
+      </div>
 
-			</div>
+      <div id = "nav">
+        <a href="index.html" class = "nav_label {% if page.pageName == "index" %} active {% endif %}">Portfolio</a>
+        <a href="Sketches.html" class = "nav_label {% if page.pageName == "sketches" %} active {% endif %}">Sketches</a>
+        <a href="About.html" class = "nav_label nav_label {% if page.pageName == "about" %} active {% endif %}">About</a>
+        <a href="Resume.pdf" target = "blank" class = "nav_label">Resume</a>
+      </div>
+
+    </div>
 
 
-			<div id = "pageContent"> 
+    <div id = "pageContent">
 
-				{{ content }}
-			
-			</div>
+      {{ content }}
 
-			<div id = "contact" > 
+    </div>
 
-				<p>
-				<a id = "insta" target = "_blank" href = "https://www.instagram.com/l0nelypeach/">
-				<img class = "socialIcon" src = "insta_icon2.png"> Instagram</a>
+    <div id = "contact" >
 
-				<img class = "socialIcon" src = "email_icon2.png"> mlandlor@gmail.com
+      <p>
+      <a id = "insta" target = "_blank" href = "https://www.instagram.com/l0nelypeach/">
+      <img class = "socialIcon" src = "insta_icon2.png"> Instagram</a>
 
-				</p>
+      <img class = "socialIcon" src = "email_icon2.png"> mlandlor@gmail.com
 
-			</div>
-			
-		</div>	
+      </p>
+
+    </div>
 
 		<script src = "lightbox.js"></script>
 		<script>
 			lightbox.option({
-				'fadeDuration': 0, 
+				'fadeDuration': 0,
 				'resizeDuration': 0
 			});
 		</script>
