@@ -673,6 +673,14 @@ body {
 }
 
 
+@media screen and (max-width: 768px) {
+  .projVideo, #reelCover { opacity: .4!important; }
+  .playButton { opacity: 1!important; }
+  .playButton img, img.playButton { width: 75px!important; }
+  .other_proj.title { font-size: 18px; }
+}
+
+
 /*///////////////////////////////
 ///////////PROJECTS/////////////
 ///////////////////////////////*/
