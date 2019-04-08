@@ -1,9 +1,16 @@
 $(function() {
 
+      // https://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript
+      var browser_height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
 // Project page other projects
    $('.other_proj_photo').each(function() {
       $(this).wrap('<div class="DarkTint DarkTintBig"></div>');
     });
+
+   if ($('#reelWrapper').height() > browser_height) {
+       $('#reelWrapper').css('height', browser_height);
+   }
 
    $('.other_proj a').hover(function(){
 
@@ -41,7 +48,6 @@ $(function() {
 
 // Reel
 
-   $('#reelCover').wrap('<div id = "darkReel"></div>');
    $('.projVideo').wrap('<div id = "darkVideo"></div>');
 
    $('#reelWrapper').mouseover(function(){
@@ -84,8 +90,6 @@ $(function() {
     var video2Open = false;
 
     $('#reelWrapper').click(function(){
-      // https://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript
-      var browser_height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
       if (videoOpen == false) {
         $("#reelWrapper").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499961?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay style='max-height:" + browser_height + "px'></iframe></div>");
         videoOpen = true;
