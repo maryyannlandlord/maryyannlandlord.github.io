@@ -84,8 +84,10 @@ $(function() {
     var video2Open = false;
 
     $('#reelWrapper').click(function(){
+      // https://stackoverflow.com/questions/1248081/get-the-browser-viewport-dimensions-with-javascript
+      var browser_height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
       if (videoOpen == false) {
-        $("#reelWrapper").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499961?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
+        $("#reelWrapper").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499961?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay style='max-height:" + browser_height + "px'></iframe></div>");
         videoOpen = true;
         };
       });
