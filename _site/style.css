@@ -830,7 +830,7 @@ body {
 	margin:auto;
 	text-align:center;
 	max-width: 1500px;
-	margin-top: 45px;
+	margin-top: 113px;
 	overflow: auto;
 }
 
@@ -838,6 +838,7 @@ body {
 	margin: 0px;
 	overflow: inherit;
 	overflow: auto;
+	margin-bottom: 50px;
 }
 
 .photos_wrapper{
@@ -852,12 +853,17 @@ body {
 	float:left;
 	width: 50%;
 	box-sizing: border-box;
+
 }
 
 .photo_wrapper.x2{
 	float: left;
 	width: 50%;
 
+}
+
+@media only screen and (max-width: 600px) {
+	.photo_wrapper.x2 { width: 100%; }
 }
 
 .photo_wrapper.full{
@@ -974,6 +980,14 @@ body {
 	margin: 25px auto auto;
 
 
+
+}
+
+.summary.design{
+	text-align:left;
+	margin: 0px;
+	margin-left:15px;
+	margin-right:15px;
 }
 
 .summary p{
@@ -1031,10 +1045,9 @@ body {
 .caption{
 	font-size: 13px;
 	color: black;
-	margin-top: 5px;
-	float: left;
 	width: auto;
-	font-weight: bold;
+	line-height: 1.68em;
+
 }
 
 .projimg{

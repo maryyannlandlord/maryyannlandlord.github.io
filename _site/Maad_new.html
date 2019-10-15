@@ -83,7 +83,7 @@
 		
 
 		<div class = "summary">
-			<p>MAAD is a mixed reality interactive installation that blends the physical and virtual environment through the use of physical textures, lights, and puzzles. Following the classic Hero's Journey archetype, the experience uses an Alien named Adam to play the role as a guardian/guide. Through Adam's help, the player solves various puzzles to restore the Power of Transformation back to Earth.</p>
+			<p>MAAD is a mixed reality interactive installation that blends the physical and virtual environment through the use of physical textures, lights, and puzzles. Following the classic Hero's Journey archetype, the experience focuses on an Alien named Adam to play the role as a guardian/guide. Through Adam's help, the player solves various puzzles on a physical Rubik's cube to restore the Power of Transformation back to Earth.</p>
 		</div>
 
 		<br>
@@ -155,6 +155,73 @@
 
 
 	<div id = "galleries_wrapper">
+
+		<div class = "gallery_wrapper">
+			<h3 class = "title">Process</h3>
+			<!-- <div class = "summary" style = "margin-top:0px"> -->
+				<!-- <p>Experimenting with moving trackers to test the stability of Vuforia in the Hololens</p> -->
+			<!-- </div> -->
+			<br>
+			<div class = "photos_wrapper">
+				
+				<div class = "photo_wrapper x2 left">
+					<img class = "photo" src = "http://i.giphy.com/3ohs4uuVLZ6S0F1iI8.gif">
+					<p class = "caption">testing Vuforia in Hololens for stability with moving trackers</p>
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					<img class = "photo" src = "http://i.giphy.com/26DN3IkoiNigvJVPW.gif">
+					<p class = "caption">testing percentage of tracker necessary for Vuforia to recognize image</p>
+				</div>
+
+
+				
+			</div>
+
+
+			<div class = "photos_wrapper" style = "margin-top:35px;">
+				<div class = "photo_wrapper x2 left"> 
+					<img class = "photo" src = "Portfolio/Maad/InteractionBeats.jpg">
+					<p class = "caption">interaction & animation script to communicate different parts of experience to team</p>
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					<div class = "summary design">
+						<p>My primary role in <i>Maad</i> was to design and implement interactions while acting as the bridge of communication between departments. Since this was the first time for my other team members to work in a game engine and Hololens, I combined my background in the animation pipeline and experience in VR/AR to help us achieve a clearer vision of our project. </p>
+						<br>
+						<p>
+						Since our experience was mostly a linear narrative, it made sense for us to follow a script. I created multiple scripts that combined the creative and technical aspects of the project -- a script which accounted for the number of required animations and assets while calling them during specific interactions. This was especially helpful to marry our traditional storyboards with the branching structure of our interactions in a format that both traditional animators and software developers could understand. The script went through many iteractions and helped us break down the development process into digestable sections. 	
+						</p>
+						<br>
+						<p>
+						<i>Maad</i> existed in a 10' x 10' x 10' physical blue cloth cube, lit only by limited LED lights hanging from the ceiling. Throughout the development process, I performed multiple tests to find the happiest middle ground that allowed us to freely design the physical space while maintaining stability on the Hololens. 
+						</p>
+						<br>
+						<p>Our main interaction involved solving puzzles on a physical Rubik's cube; I tested different samples of trackers to determine the best types of designs for Vuforia. Additionally I split the trackers into sections to simulate a player solving our Rubik's cube. When players solve the puzzle with our character, the Hololens needs to quickly pick up the symbols when they are correctly created. </p>
+						<br>
+						<p>
+						Using Unity's animation editor, I created an animation state machine for our little alien, Adam, who goes through a variety of states from eating, to meeting the player, to teaching the player how to solve the puzzles. One of the biggest design challenges was always keeping Adam a main focus. From previous Hololens projects I learned to limit Adam's size, which prevents him from being cut off the screen and ground him in our world; but it made him harder to follow. In addition to spacializing Adam's voice, I also increased his voice whenever Adam had something important to show the player. From our playtests, we learned that this technique paired with Adam's unique voice helped players locate him in our environment. 
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class = "photos_wrapper" style = "margin-top:35px;">
+				<div class = "photo_wrapper x2 left"> 
+					<video width = "100%" autoplay muted loop>
+						<source src = "Portfolio/Maad/VuforiaTriggerBallTest.mp4" type = "video/mp4">
+					</video>
+					<p class = "caption">prototyping pairing animations to different trackers</p>
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					<video width = "100%" autoplay muted loop>
+						<source src = "Portfolio/Maad/InteractionTest.mp4" type = "video/mp4">
+					</video>
+					<p class = "caption">testing early builds with tracker interactions</p>
+				</div>
+			</div>
+		</div>
+
+
+
 		<div class = "gallery_wrapper">
 			<h3 class = "title">Stills</h3>
 			<div class = "summary" style = "margin-top:0px">
@@ -182,22 +249,9 @@
 				</div>
 				
 			</div>
+		</div>
 
-			<h3 class = "title">Vuforia Research</h3>
-			<div class = "summary" style = "margin-top:0px">
-				<p>Experimenting with moving trackers to test the stability of Vuforia in the Hololens</p>
-			</div>
-			<br>
-			<div class = "photos_wrapper">
-				
-				<div class = "photo_wrapper x2 left">
-					<img class = "photo" src = "http://i.giphy.com/3ohs4uuVLZ6S0F1iI8.gif">
-				</div>
-				<div class = "photo_wrapper x2 right">
-					<img class = "photo" src = "http://i.giphy.com/26DN3IkoiNigvJVPW.gif">
-				</div>
-			</div>
-
+		<div class = "gallery_wrapper">
 			<h3 class = "title">Installation</h3>
 			<div class = "summary" style = "margin-top:0px">
 				<p></p>
@@ -222,6 +276,7 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
 
 	<div id = "other_proj_wrapper">
