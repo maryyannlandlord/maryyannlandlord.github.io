@@ -96,6 +96,9 @@ $(function() {
         };
       });
 
+   //  <iframe width="560" height="315" src="https://www.youtube.com/embed/p4V_Izk1xbw?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
     $('.videoWrapper').click(function(){
       if (videoOpen == false) {
         $("#yokai").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/252673806?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");

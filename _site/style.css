@@ -191,6 +191,7 @@ body {
 	padding:0;
 	transition: opacity .4s linear;
 	transition-timing-function: ease-in-out;
+	border-radius: 5px;
 }
 
 
@@ -260,6 +261,38 @@ body {
 	overflow:auto;
 
 }
+
+.contentTable{
+	float: right;
+    /*position: fixed;*/
+    position:absolute;
+    top: 1100px;
+    right: 50px;
+    z-index: 2;
+    font-size: 20px;
+    text-align:right;
+    height: 100%;
+}
+
+#stickyTable{
+	margin:0px;
+	position: sticky;
+	top:20px;
+}
+
+.contentTable a{
+	margin:0px;
+	margin-bottom:30px;
+	margin-top:5px;
+	text-decoration: none;
+	color:#c3c3c3;
+	display: block;
+}
+
+.contentTable a:hover{
+	color: #945d83;
+}
+
 
 
 @media screen and (max-width: 1440px) {
@@ -649,7 +682,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
-	opacity:1;
+opacity:1;
 
 	transition: opacity .4s linear;
 	transition-timing-function: ease-in-out;
@@ -689,7 +722,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .playButton img, img.playButton { width: 75px!important; }
-  .other_proj.title { font-size: 18px; }
+  .other_proj.title { font-size: 10px; }
   #videoTitle { font-size: 25px; }
 }
 
@@ -909,6 +942,7 @@ body {
 	width:100%;
 	transition: opacity .4s linear;
 	transition-timing-function: ease-in-out;
+
 }
 
 .other_proj_photo:hover{
@@ -936,10 +970,12 @@ body {
   margin: 0px;
 	background: black;
   line-height: 19px; /* fixes the black border bug */
+  border-radius: 5px;
 }
 
 .DarkTintBig {
   line-height: 7px;
+  border-radius: 5px;
 }
 
 .text_wrapper{
@@ -977,7 +1013,7 @@ body {
 	display:block;
 	font-size: 18px;
 	max-width: 900px;
-	margin: 25px auto auto;
+	margin: 25px 19% auto;
 
 
 
