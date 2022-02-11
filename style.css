@@ -470,7 +470,6 @@ body {
 }
 
 #aboutMe{
-	text-align: center;
 	margin:auto;
 
 	color: #444;
@@ -481,6 +480,9 @@ body {
 
 }
 
+#aboutMe p{
+	text-align: left;
+}
 
 
 #email{
