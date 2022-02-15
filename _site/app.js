@@ -91,7 +91,7 @@ $(function() {
 
     $('#reelWrapper').click(function(){
       if (videoOpen == false) {
-        $("#reelWrapper").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499961?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay style='max-height:" + browser_height + "px'></iframe></div>");
+        $("#reelWrapper").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/677522047?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay style='max-height:" + browser_height + "px'></iframe></div>");
         videoOpen = true;
         };
       });
@@ -106,7 +106,7 @@ $(function() {
         $("#momento1").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499057?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
         $("#steelcase").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/258761583?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
         $("#wetware").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/340127291?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
-
+        $("#musicEffects").html("<div class='embed-container'><iframe src='https://www.youtube.com/embed/MDh6Z1Qm_CM?autoplay=1&autopause=0' frameborder='0'; allow=\"fullscreen;autoplay\"></iframe></div>");
 
         videoOpen = true;
         };
