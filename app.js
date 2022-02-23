@@ -9,7 +9,7 @@ $(function() {
     });
 
    if ($('#reelWrapper').height() > browser_height) {
-       $('#reelWrapper').css('height', browser_height);
+       $('#reelWrapper').css('height',browser_height);
    }
 
    $('.other_proj a').hover(function(){
@@ -29,7 +29,7 @@ $(function() {
 // Index page Wetware
 
     $('.proj_photo_full').each(function() {
-      $(this).wrap('<div class="DarkTint DarkTintBigger"></div>');
+      $(this).wrap('<div class="DarkTint"></div>');
     });
 
 //Index page names
@@ -48,7 +48,7 @@ $(function() {
 
 // Reel
 
-   $('.projVideo').wrap('<div id = "darkVideo"></div>');
+   $('.VideoCover').wrap('<div id = "darkVideo"></div>');
 
    $('#reelWrapper').mouseover(function(){
 
@@ -62,28 +62,32 @@ $(function() {
     $('#reelCover').css("opacity", "1");
    });
 
-    $('.videoWrapper').mouseover(function(){
+    $('.videoWrapper.1').mouseover(function(){
 
-    $('.playButton').css("opacity","1");
-    $('.projVideo', this).css("opacity", ".3");
+    $('.playButton.1').css("opacity","1");
+    $('.videoTitle.1').css("opacity","1");
+    $('.VideoCover.1', this).css("opacity", ".3");
    });
 
-    $('.videoWrapper').mouseout(function(){
+    $('.videoWrapper.1').mouseout(function(){
 
-    $('.playButton').css("opacity","0");
-    $('.projVideo', this).css("opacity", "1");
+    $('.playButton.1').css("opacity","0");
+    $('.videoTitle.1').css("opacity","0");
+    $('.VideoCover.1', this).css("opacity", "1");
    });
 
-    $('.videoWrapper_2').mouseover(function(){
+    $('.videoWrapper.2').mouseover(function(){
 
-    $('.playButton').css("opacity","1");
-    $('.projVideo', this).css("opacity", ".3");
+    $('.playButton.2').css("opacity","1");
+    $('.videoTitle.2').css("opacity","1");
+    $('.VideoCover.2', this).css("opacity", ".3");
    });
 
-    $('.videoWrapper_2').mouseout(function(){
+    $('.videoWrapper.2').mouseout(function(){
 
-    $('.playButton').css("opacity","0");
-    $('.projVideo', this).css("opacity", "1");
+    $('.playButton.2').css("opacity","0");
+    $('.videoTitle.2').css("opacity","0");
+    $('.VideoCover.2', this).css("opacity", "1");
    });
 
     var videoOpen = false;
@@ -91,7 +95,7 @@ $(function() {
 
     $('#reelWrapper').click(function(){
       if (videoOpen == false) {
-        $("#reelWrapper").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/677522047?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay style='max-height:" + browser_height + "px'></iframe></div>");
+        $("#reelWrapper").html("<div class='embed-container index'><iframe src='https://player.vimeo.com/video/677522047?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay style='max-height:" + (browser_height) + "px'></iframe></div>");
         videoOpen = true;
         };
       });
@@ -107,21 +111,19 @@ $(function() {
         $("#steelcase").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/258761583?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
         $("#wetware").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/340127291?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
         $("#musicEffects").html("<div class='embed-container'><iframe src='https://www.youtube.com/embed/MDh6Z1Qm_CM?autoplay=1&autopause=0' frameborder='0'; allow=\"fullscreen;autoplay\"></iframe></div>");
-
+       
         videoOpen = true;
         };
       });
 
-
+    
       $('.videoWrapper_2').click(function(){
       if (video2Open == false) {
          //$("#momento2").html("<video autoplay controls style = 'width: 1500px; height: 844px' > <source src = 'Portfolio/Momento/Video2.mp4' type = 'video/mp4'></video>");
-          $("#momento2").html("<div class='embed-container'><iframe src='https://player.vimeo.com/video/326499370?autoplay=1&autopause=0' width='1500' height='844' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div>");
-
+         
         video2Open = true;
         };
       });
-
 
 });
 
