@@ -260,7 +260,8 @@ function createAllLightGalleries(){
     "wetware-tex",
     "wetware-stills",
     "momento-paintedCorner",
-    "sketchGallery"
+    "sketchGallery", 
+    "momento-gifs"
     ];
 
     for (let step = 0; step < galleries.length; step++){
