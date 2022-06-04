@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-			
-<div class = "content"> 
+<div class = "content" style ="padding-top:10px; margin-top: 0;">
 
 	<div class = "videoWrapper 1" id = "yokai">
 		<img class = "VideoCover 1" src = "Portfolio/Yokai/photo.png"/>	
@@ -12,95 +11,492 @@ layout: default
 		</div>
 		
 	</div>
-	
-	<div id = "info_wrapper">
-		<div id = "title_wrapper">
+
+	<div id = "flex_descrip_wrapper">
+
+		<div class = "info_wrapper" id = "info-one">
 			<h1 class = "title">Yokai!</h1>
-
-			<div class = "exhibit"><a href = "http://mobilemedia.usc.edu/content/home" class = "link">USC Mobile and Environmental Media Lab</a></div>
-			<p id = "role">Technical Artist / Production and Interaction Designer</p>
-			
-		</div>
-		
-
-		<div class = "summary">
-			<p>Yokai! is a mixed reality interactive installation that uses physical puzzles to advance a virtual narrative. The player is a weary traveler in Tokyo greeted by an unexpected Yokai named Zashiki dwelling in their AirBnB. Zashiki is causing chaos and the only path to peace is to make her happy. We imagined the Hololens as a device which reveals another world / dimension that could co-exist alongside our own. </p>
+			<p class = "info_secondary">Technical Artist / Production & Interaction Designer</p>
 		</div>
 
-		<br>
-		<p id = "software">Hololens / Unity / Maya / Photoshop</p>
-		<br>
+		<div class = "info_wrapper" id = "info-two">
+			<h3 class = "subSection">Project Goals</h3>
+			<p class = "textContent"> 
+				Explore the potential of interactive narrative by combining Hololens, phone, and physical puzzles. 
+			</p>
+		</div>
 
-		
+
+		<div class = "info_wrapper" id = "info-three" style = "align-self: center;">
+			<a class = "link" target = _blank href = "http://mobilemedia.usc.edu/content/home" style = "text-decoration: underline;">USC Mobile and Environmental Media Lab</a>
+			<p class = "info_secondary">Hololens / Unity / Maya / Photoshop / Tilt Brush</p>
+		</div>
+
+
+		<div class = "info_wrapper" id = "info-four">
+			<h3 class = "subSection">Summary</h3>
+			<p class = "textContent"> 
+				Yokai! is an XR installation that uses physical puzzles to advance a interactive narrative. The player is a weary traveler in Tokyo greeted by an unexpected Yokai named Zashiki dwelling in their AirBnB. Zashiki is causing chaos and the only path to peace is to make her happy.
+			</p>
+		</div>
+
 	</div>
 
+	<div class = "divider">
+	</div>
+</div>
+
+
+ <div id = "flex-tableContents">
+		<a class = "tableLabel" href = "#research_concept">
+			research & concept dev
+		</a>
+		<a class = "tableLabel" href = "#worldbuilding">
+			worldbuilding
+		</a>
+		<a class = "tableLabel" id = "experienceflowTitle" href = "#experienceflow">
+			experience flow
+		</a>
+		<a class = "tableLabel" style = "border:none" href = "#playtesting">
+			playtesting
+		</a>
+	</div>
+
+<div id = "spacing_stickyNav"></div>
+
+
+<!--Reserach and Concept Dev!-->
+
+
+<div class = "content_wrapper_dark section" id = "research_concept">
+	<div class = "content">
+
+	<div class = "content_mid">
+		<h2 class = "title">Research & Concept Development</h2>
+		<p class = "textContent wide"> 
+
+			I began the project by researching Yokai in Japanese culture &#8212 what is a Yokai? what's their relationship with people? 
+			I found <a target = "_blank" class = "link" href = "https://yokai.com/">Yokai, an illustrated database of Japanese folklore</a>, especially helpful. Throughout this process, I asked myself the following questions &#8212 How do we utilize the physical environment to build a relationship with a digital character? When do these two worlds overlap?
+
+			 
+		</p>
+	</div>
+	<div class = "content_mid">
+		<h3 class = "title">Experience Goals and Limitations</h3>
+		<p class = "textContent wide"> 
+			Our goal was to explore potential of interaction between people and digital beings through the combined use of physical and virtual puzzles. Users need to offer Zashiki three items on her shrine in the correct order to pass her test. 
+		</p>
+	</div>
+
+
+		<div class = "content_wide">
+
+			
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper x2 left"> 
+					<video width = "100%" autoplay muted loop>
+						<source src = "Portfolio/Yokai/yokai-concept.mp4" type = "video/mp4">
+					</video>
+					<p class = "caption">initial yokai concept research sketches</p>
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					<div class = "textContent right">
+						<p style = "font-weight: bold;">Experience goals :</p>
+						<br>
+						<p>1. Retain authentic cultural relevence </p>
+						<br>
+						<p>2. Balance the physical and virtual environment </p>
+						<br>
+						<p>3. Minimize gestural interaction and maximize novel output</p>
+						<br>
+						<p>
+							The 3rd experience goal accounted for designing within the restrictions of Hololens gestural inaccuracy. Players experience Yokai! with no instructions. Clues come from phone SMS and the digital Yokai, Zashiki.  
+						</p>
+						<br>
+						<p>
+							<a target = "_blank" class = "link" href = "https://yokai.com/zashikiwarashi/">Zashiki Warashi</a> is a childlike house spirit, often considered to be the god of luck. I based items players offer to Zashiki off of the Yokai's love of candy and toys, and her ability to bring good fortune.
+						</p>
+						<br>
+						<p></p>
+						</div>
+
+				</div>
+			</div>
+
+			<div class = "spacing_afterCaption"></div>
+
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper x2 left"> 
+					<div class = "textContent right">
+						<p style = "font-weight: bold;">Designing for Hololens :</p>
+						<br>
+						<p>1. Characters fit comfortably in the focus zone</p>
+						<br>
+						<p>2. Essential content lies within the safe and focus zone</p>
+						<br>
+						<p>3. Blur the edge of viewport for smoother transition</p>
+						<br>
+						<p>There are no hard and fast rules to designing for Hololens. AR headsets are still a developing medium. After multiple initial tests around screen space, color, and interaction, I came up with 3 guidelines.</p> 
+						<br>
+						
+						</div>
+
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					<img src = "Portfolio/Yokai/hololensDesignZone.png" style = "width:100%">
+					<p class = "caption">Hololens Field of View design layout guideline</p>
+				</div>
+				
+			</div>
+
+	</div>
+	</div>
+<div class = "spacing_subsection"></div>
+</div>
+
+
+<!--WorldBuilding!-->
+
+<div class = "content_wrapper_light section" id = "worldbuilding">
+	<div class = "content">
+		<div class = "content_wide">
+
+			<div class = "content_mid">
+				<h2 class = "title">Worldbuilding</h2>
+			 
+			</div>
+
+			<div class = "content_mid">
+				<h3 class = "title">Designing Yokai Characters and Environment</h3>
+				<p>  
+					I created all of the assets and animations. To find the most trackable character size on the Hololens, I performed multiple tests with different Zashiki sizes. We went with a smaller character with bold colors and spacial sound effects that also helped players follow her around. 
+				</p>
+				<p>
+				 For the set, I created sketches and 3D mockups to give a better sense of space. To emphasize our first experience goal of retaining cultural values, all of the set decor are from traditional Japanese household items &#8212 Kotatsu, Tatami mats, Kamidana Alter. For the virtual interactive objects, I hid clues inside of traditonal Japanese painting scrolls that activated based on a player's position.
+				</p>
+			</div>
+
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper x2 vert"  > 
+					<video width = "100%" autoplay muted loop>
+						<source src = "Portfolio/Yokai/zashiki_compile_v2.mp4" type = "video/mp4">
+
+					</video>
+					 <p class = "caption">Zashiki creation process; concept, model, rig, animation, implementation</p>
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+
+					<video width = "100%" autoplay muted loop>
+						<source src = "Portfolio/Yokai/setDesign.mp4" type = "video/mp4">
+
+					</video>
+					 <p class = "caption">Physical set creation process; 2D and 3D mockups</p>
+				</div>
+				
+			</div>
+
+			<div class = "spacing_text2Pic"></div>
+
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper up3">
+					<img class = "photo_noZoom" src = "http://i.giphy.com/3o7WIAe5ZthKS4m2li.gif">
+				</div>
+				<div class = "photo_wrapper up3">
+					<img  class = "photo_noZoom"src = "http://i.giphy.com/RKSIqINWBL1DZ48JXI.gif">
+				</div>
+				<div class = "photo_wrapper up3">
+					<img   class = "photo_noZoom"src = "http://i.giphy.com/3o7WICbybAyf9lDDnq.gif">
+				</div>
+				<div class = "photo_wrapper up3">
+					<img  class = "photo_noZoom"src = "http://i.giphy.com/LO3ex54XIN8f9CGfIR.gif">
+				</div>
+				<div class = "photo_wrapper up3">
+					<img  class = "photo_noZoom"src = "http://i.giphy.com/xThtaxtR69j8zKCno4.gif">
+				</div>
+				<div class = "photo_wrapper up3">
+					<img  class = "photo_noZoom"src = "http://i.giphy.com/3ohs4ymPU6y0NHgsXS.gif">
+				</div>
+			</div>			 
+			<p class = "caption">Character animations; Zashiki and other Yokai</p>
+		</div>
+	</div>
+</div>
+
+
+<!--Experience Flow!-->
+
+<div class = "content_wrapper_dark section" id = "experienceflow">
+	<div class = "content">
+
+	<div class = content_wide>
+
+		<div class = "content_mid">
+			<h2 class = "title">Experience Flow</h2>
+			<p class = "textContent wide"> 
+
+ 
+			</p>
+		</div>
+		<div class = "content_mid">
+			<h3 class = "title">Outline and Storyboard</h3>
+			<p class = "textContent wide"> 
+				Our approach to designing the experience was quick iteration and repeated playtesting. We first created a text outline to brainstorm the experience flow. I also created storyboard sketches on sticky notes that we could easily reorder. 
+			</p>
+			<br>
+			<p> Throughout this process, I asked the following questions &#8212 How do we make Zashiki believable? How can we utilize both physical and virtual spaces? How do we introduce interaction with minimal Player effort? 
+			<div class = "spacing_text2Pic"></div>
+ 
+		</div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper x2 vert"> 
+				<figure class = "photo" lg-background-color="rgb(238 238 238)" data-lg-size="713-738" data-src = "Portfolio/Yokai/experienceOutline.JPG">
+					<img  src = "Portfolio/Yokai/experienceOutline.JPG" >
+				</figure>
+				<p class = "caption">Experience outline; draft 1 understading experience flow</p>
+			</div>
+			<div class = "photo_wrapper x2 right"> 
+				<div class = "textContent right">
+					<p style = "font-weight: bold;"> Design Highlights:</p>
+					<br>
+					<p>1. Characters react in a range of emotions to Player actions</p>
+					<br>
+					<p>2. Players solve physical puzzles to interact with virtual characters</p>
+					<br>
+					<p>3. Players gain insight into goals through multiple access points</p>
+					<br>
+					<p> 
+						To make Zashiki more believable, I created animations that give Players instant feedback to their actions. To add more immersion, I created many virtual household objects that collide with the physical environment.
+					</p>
+					<br>
+					<p>
+						Each virtual clue links to a physical puzzle piece Players pick up. Connected with RFID tags, the physical objects will trigger changes in the virtual space, giving Players a moment of magic. 
+					</p>
+					<br>
+					<p>
+						Our main audience had no previous Hololens experience. I replaced unfamiliar Hololens interactions with SMS from a mobile phone and gestures from the virtual character. This lowered the barrier of entry. 
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class = "spacing_afterCaption"></div>
+		
+		<figure class = "photo" lg-background-color="rgb(238 238 238)" data-lg-size="1615-489" data-src = "Portfolio/Yokai/storyboard.jpg">
+			<img  src = "Portfolio/Yokai/storyboard.jpg" >
+		</figure>
+		<p class = "caption">Storyboard sketches of Yokai! through Hololens POV; cutout characters to easily move around</p>
+	 	
+		<div class = "spacing_subsection"></div>
+		
+		<div class = "content_mid">
+
+			<h3 class = "title">Experience Map and Story Flow</h3>
+			<p class = "textContent wide"> 
+				 We initially designed Zashiki to dance in a Player's periperal vision, but Players had difficulty noticing her in the small FOV. 
+			<p> 
+			  	In the final iteration, Zashiki constantly floats within the 'focus zone' of the Hololens FOV. To direct a Player, Zashiki will float towards one side of the screen and gesture until the Player's gaze follows. Animations also helped communicate our intentions. 
+			</p>
+			<p>
+				I created a map alongside a story flow that showed where we should direct Players to trigger the next set of actions. 
+			</p>
+
+		</div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper x2 left"> 
+				<figure class = "photo" lg-background-color="rgb(238 238 238)" data-lg-size="1213-866" data-src = "Portfolio/Yokai/map.PNG">
+					<img src = "Portfolio/Yokai/map.PNG">
+				</figure>
+				<p class = "caption">Experience map; corresponds to player's ideal physcial position in experience flow</p>
+			</div>
+			<div class = "photo_wrapper x2 right"> 
+				<video width = "100%" autoplay muted loop>
+					<source src = "Portfolio/Yokai/scrolls.mp4" type = "video/mp4">
+				</video>
+				<p class = "caption">Virtual Scroll Clues; detailed concepts corresponding to items players must offer onto the Shrine</p>
+				
+			</div>	
+		</div>
+		<div class = "spacing_afterCaption"></div>
+		<figure class = "photo" lg-background-color="rgb(238 238 238)" data-lg-size="1639-831" data-src = "Portfolio/Yokai/experienceflow.PNG">
+			<img src = "Portfolio/Yokai/experienceflow.PNG">
+		</figure>
+	</div>
+	</div>
+	<div class = "spacing_subsection"></div>
+</div>
+
+<!--Documentation!-->
+
+<div class = "content_wrapper_light section" id = "playtesting">
+	<div class = "content">
+
+	<div class = content_wide>
+
+		<div class = "content_mid">
+			<h2 class = "title">Playtesting</h2>
+			<p class = "textContent wide"> 
+				The entire project took about a year to finish from concept to documentation. We conducted about a dozen playtests inside the lab with varrying levels of success and feedback. 
+			</p>
+		</div>
+		<div class = "content_mid">
+			<h3 class = "title">Final Results and Feedback</h3>
+			<p class = "textContent wide"> 
+				Our metric for success was based on emotional connection to Zashiki and ease of interaction. 
+			</p>
+		</div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper x2 vert"> 
+				<img src = "Portfolio/Yokai/pic.jpg" style = "width: 100%;">
+				<p class = "caption">Setup of Kotatsu, Tatami mats, and Kamidana Alter</p>
+			</div>
+			<div class = "photo_wrapper x2 right"> 
+				<div class = "textContent right">
+					<p><strong>Key Highlights</strong></p>
+					<br>
+					 <p>
+					 	&#8226 All playtesters successfully finished the main experience, but only 1/4 completed the ending. 
+					 </p>
+					 <br>
+					 <p>
+					 	&#8226 Age of playtesters ranged from college undergrads to 50 yr old adults.  
+					 </p>
+					 <br>
+					 <p>
+					 	&#8226 All playtesters showed disbelief and joy when physical actions triggered virtual changes.
+					 </p>
+					 <div class = "spacing_afterCaption"></div>
+					 <p><strong>Conclusions</strong></p>
+					 <br>
+					 <p>
+					 	&#8226 The ending required clearer incentive. Zashiki gestures above the Kotatsu and flys beneath it, but playtesters were not persuaded to look underneath. 
+					 </p>
+					 <br>
+					 <p>
+					 	&#8226 Minimizing hololens specific gestures successfully lowered barrier of entry. 
+					 </p>
+					 <br>
+					 <p>
+					 	&#8226 Successfully maintained novelty by combined use of virtual and physical interactions. 
+					 </p>
+					 
+				</div>
+			</div>
+		</div>
+
+		<div class = "spacing_afterCaption"></div>
+
+		<div class = "content_mid">
+			<h3 class = "title"><i> Designing for headsets is challenging, even in a controlled space. Players get disoriented or miss important information. We must always design with hardware restrictions in mind.</i></h3>
+			<div class = "spacing_text2Pic"></div>
+		</div>
+
+		<div class = "content_mid">
+			<h3 class = "title">Final Result Stills</h3>
+	
+		</div>
+		<div class = "photos_wrapper" id = "yokai-stills">
+			<a class = "photo_wrapper up3 left" href = "Portfolio/Yokai/still5.jpg">
+				<img  class = "galleryThumb" src = "Portfolio/Yokai/still5.jpg">
+			</a>
+			<a class = "photo_wrapper up3 mid" href = "Portfolio/Yokai/still3.jpg">
+				<img  class = "galleryThumb"  src = "Portfolio/Yokai/still3.jpg">
+			</a>
+			<a class = "photo_wrapper up3 right" href = "Portfolio/Yokai/still2.jpg">
+				<img  class = "galleryThumb"  src = "Portfolio/Yokai/still2.jpg">
+			</a>
+
+			<a class = "photo_wrapper full" href = "Portfolio/Yokai/still1.jpg">
+				<img  class = "galleryThumb"  src = "Portfolio/Yokai/still1.jpg">
+			</a>
+
+			<a class = "photo_wrapper x2 left" href = "Portfolio/Yokai/still4.jpg">
+				<img  class = "galleryThumb" src = "Portfolio/Yokai/still4.jpg">
+			</a>
+			<a class = "photo_wrapper x2 right" href = "Portfolio/Yokai/still6.jpg">
+				<img  class = "galleryThumb"  src = "Portfolio/Yokai/still6.jpg">
+			</a>
+
+		</div>
+	</div>		
+	</div>
+</div>		
+			
+	 
+	
+		
+
+
+
+<div class = "content">
 	<div id = "credits_wrapper">
 			<button onclick = "showCredits('credits')">
-				<h3 class = "title">Credits</h3>
+				<h2 class = "title">Credits</h2>
 			</button>
 			<div>
 				<div id = "credits">
-				<div style = "margin:0px; text-align: center; padding:15px; ">
-					<h3 style = "border: 0px; border-bottom: 1px solid #b497ab; width:auto; padding:0px;margin:0px; margin-bottom: 25px; " class = "title">Yokai!</h3>
-				</div>
+				<h3 style = "text-align: center;">Yokai!</h3>
+					<div class = "divider"></div>
 				
 				<div class = "credits_column">
 					<div class = "credit">
-						<h2>Directed by</h2>
+						<h4>Directed by</h4>
 						<p>Scott Fisher</p>
 					</div>
 					<div class = "credit">
-						<h2>Producer</h2>
+						<h4>Producer</h4>
 						<p>Scott Fisher</p>
 					</div>
 					<div class = "credit">
-						<h2>Production Design</h2>
+						<h4>Production Design</h4>
 						<p>Maryyann Landlord</p>
 						<p>Scott Fisher</p>
 					</div>
 					<div class = "credit">
-						<h2>Interaction Design</h2>
+						<h4>Interaction Design</h4>
 						<p>Scott Fisher</p>
 						<p>Maryyann Landlord</p>
 					</div>
 					<div class = "credit">
-						<h2>Visual Development</h2>
+						<h4>Visual Development</h4>
 						<p>Maryyann Landlord</p>
 					</div>
 					<div class = "credit">
-						<h2>Character Modeling</h2>
+						<h4>Character Modeling</h4>
 						<p>Maryyann Landlord</p>
 					</div>
 				</div>
 
 				<div class = "credits_column">
 					<div class = "credit">
-						<h2>Animation</h2>
+						<h4>Animation</h4>
 						<p>Maryyann Landlord</p>
 					</div>
 					<div class = "credit">
-						<h2>Character Rigging</h2>
+						<h4>Character Rigging</h4>
 						<p>Maryyann Landlord</p>
 					</div>
 					<div class = "credit">
-						<h2>Software Engineering</h2>
+						<h4>Software Engineering</h4>
 						<p>Satrio Dewantono</p>
 					</div>
 					<div class = "credit">
-						<h2>Hardware Engineering</h2>
+						<h4>Hardware Engineering</h4>
 						<p>Satrio Dewantono</p>
 					</div>
 					<div class = "credit">
-						<h2>Engineering Support</h2>
+						<h4>Engineering Support</h4>
 						<p>Chinmay Chinara</p>
 						<p>Awu Chen</p>
 					</div>
 					<div class = "credit">
-						<h2>Sound Design</h2>
+						<h4>Sound Design</h4>
 						<p>Crystal Chan</p>
 					</div>
 					<div class = "credit">
-						<h2>Sound Advisors</h2>
+						<h4>Sound Advisors</h4>
 						<p>Kojiro Umezaki</p>
 						<p>Bethany Sparks</p>
 					</div>
@@ -108,172 +504,59 @@ layout: default
 
 				<div class = "credits_column">
 					<div class = "credit">
-						<h2>Ideation Support</h2>
+						<h4>Ideation Support</h4>
 						<p>Perry Hoberman</p>
 					</div>
 					<div class = "credit">
-						<h2>3D Printing</h2>
+						<h4>3D Printing</h4>
 						<p>Biayna Bagosian</p>
 					</div>
 					<div class = "credit">
-						<h2>Japan Cultural Advisors</h2>
+						<h4>Japan Cultural Advisors</h4>
 						<p>Kojiro Umezaki</p>
 						<p>Matt Alt</p>
 						<p>Hiroko Yoda</p>
 					</div>
 					<div class = "credit">
-						<h2>Voice Actors</h2>
+						<h4>Voice Actors</h4>
 						<p>Takashi Uchida</p>
 					</div>
 					<div class = "credit">
-						<h2>Crew</h2>
+						<h4>Crew</h4>
 						<p>Yaya Veerasilpa</p>
 						<p>Enrico Targetti</p>
 						<p>William Crichton</p>
 						<p>Keshav Prasad</p>
 					</div>
 				</div>
-
-
 				</div> 
 			</div>
-		</div>
-
-
-	<div id = "galleries_wrapper">
-		<div class = "gallery_wrapper">
-
-			<h3 class = "title">Process</h3>
-			<br>
-			<div class = "photos_wrapper">
-				<div class = "photo_wrapper up3 left">
-					<img class = "photo" src = "Portfolio/Yokai/lab.jpg">
-				</div>
-				<div class = "photo_wrapper up3 mid">
-					<img class = "photo" src = "Portfolio/Yokai/yokai_design.jpg">
-				</div>
-				<div class = "photo_wrapper up3 right">
-					<img class = "photo" src = "Portfolio/Yokai/yokai_lab.jpg"">
-				</div>
-				
-			</div>
-			
-			<div class = "photos_wrapper" style = "margin-top:35px;">
-				<div class = "photo_wrapper x2 left"> 
-					<video width = "70%" autoplay muted loop>
-						<source src = "Portfolio/Yokai/zashiki_compile.mp4" type = "video/mp4">
-					</video>
-					<p class = "caption">Zashiki creation process -- concept -> model -> rig -> animation -> implementation</p>
-				</div>
-				<div class = "photo_wrapper x2 right"> 
-					<div class = "summary design">
-						<p> <i>Yokai!</i> comes from the popular Japanese legend that humans share a world with spirits. Zashiki Warashi is a fortune spirit who takes the form of a child and can only be satisfied with offers from the player.</p>
-						<br>
-						<p>I took the challenge of reimagining the relationship between a human and Zashiki in a more modern context while designing for a mixed reality environment. How do we utilize the physical environment to build a relationship with a digital character? When do these two worlds overlap?</p>
-						<br>
-						<p>There were several factors to consider when designing for this experience.</p>
-						<br>
-						<p style = "text-align: center">cultural relevence</p>
-						<br>
-						<p style = "text-align: center">hardware restrictions</p>
-						<br>
-						<p style = "text-align: center">physical environment</p>
-						<br>
-						<!--<p> Whenever I design an experience, I always start with the concept. This entire narrative design must revolve around Zashiki and her childlike personality. By defining the context of the world, I could always refer each design decision back to this limitation. Every interaction and story beat should support the concept. </p>-->
-					
-						<p>The initial design process involved a lot of research on Zashiki's personality and Japanese culture. Since our concept is based on the belief that Zashiki already exists in our world, I wanted the experience to feel very tactile and natural. Early on I made the decision to disgard common tactics in games such as using arrows or glowing symbols to communicate next actions to a player. Instead Zashiki flies across the room playing with various objects, like the tatami mat and scrolls on the wall, that hint at what she wants the player to offer her. Sometimes she would leave drawings around the room to indicate her presence. This behavior aligned with her personality as a mischievous spirit.</p> 
-						</div>
-
-				</div>
-			</div>
-			<div class = "photos_wrapper" style = "margin-top:35px;">
-				<div class = "photo_wrapper x2 left"> 
-					<img class = "photo" style = "width:70%; margin: auto;" src = "Portfolio/Yokai/yokai_space_draft.jpg">
-					<p class = "caption">sketch of physical production design</p>
-				</div>
-				<div class = "photo_wrapper x2 right"> 
-					<div class = "summary design">
-						<p>One design challenge we faced was the limited size of the Hololens display. The sharp edge of the screen became extremely distracting. I tested varying sizes of Zashiki to find the best range for all Yokai characters. Additionally, we blurred the edge of the screen to have a "searchlight" appearance that both added to the "escape the room" structure of the experience and created a comfortable gradient as objects came in and out of the screen.</p>
-						<br>
-						<p>Physical production design was a big challenge. Our experience was setup in a research lab which we need to turn into a Japanese Airbnb. We brought in a kotatsu (traditional japanese table), tatami mats, kamidana alter, wall decorations, and DIY Airbnb guestbook to augment the space. Zashiki is known for destroying furniture and kitchenware, so I designed and modeled several versions of teapotsets and japanese furniture that she would throw around the room. These digital models collected and interacted with the physical furniture to connect the physical and digital (spirital) worlds. For future iterations, I hope to extend the project to become scalable and experienced anywhere.</p>
-						<br>
-						<p>Designing room-scale AR experiences on a headset is hard, even with multiple playtests. People get lost, they miss things, and so many moving parts rely on the hardware working perfectly.</p>
-					</div>
-
-
-				</div>
-			</div>
-
-
-		</div>
-
-		<div class = "gallery_wrapper">
-			<h3 class = "title">Character Designs</h3>
-			<div class = "summary mid" style = "margin-top:0px">
-				<p>Examples of characters I designed, modeled, rigged, and animated</p>
-			</div>
-			<br>
-			<div class = "photos_wrapper">
-				<div class = "photo_wrapper up3">
-					<img class = "photo" src = "http://i.giphy.com/3o7WIAe5ZthKS4m2li.gif">
-				</div>
-				<div class = "photo_wrapper up3">
-					<img class = "photo" src = "http://i.giphy.com/RKSIqINWBL1DZ48JXI.gif">
-				</div>
-				<div class = "photo_wrapper up3">
-					<img class = "photo"  src = "http://i.giphy.com/3o7WICbybAyf9lDDnq.gif">
-				</div>
-				<div class = "photo_wrapper up3">
-					<img class = "photo" src = "http://i.giphy.com/LO3ex54XIN8f9CGfIR.gif">
-				</div>
-				<div class = "photo_wrapper up3">
-					<img class = "photo"  src = "http://i.giphy.com/xThtaxtR69j8zKCno4.gif">
-				</div>
-				<div class = "photo_wrapper up3">
-					<img class = "photo" src = "http://i.giphy.com/3ohs4ymPU6y0NHgsXS.gif">
-				</div>
-			</div>
-
-		</div>
-
-		<div class = "gallery_wrapper">
-			<h3 class = "title">Stills</h3>
-			<br>
-			<div class = "photos_wrapper">
-				<div class = "photo_wrapper x2 left"> 
-					<img class = "photo" src = "Portfolio/Yokai/still3.jpg">
-				</div>
-				<div class = "photo_wrapper x2 right">
-					<img class = "photo" src = "Portfolio/Yokai/still5.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Yokai/still1.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Yokai/still4.jpg">
-				</div>
-
-			</div>
-		</div>
-
-		
-
 	</div>
-	
+	<div class = "spacing_afterCaption"></div>
+	<div class = "divider"></div>
 
-	<div id = "other_proj_wrapper">
+	<h4>Other Projects</h4>
+</div>
 
-		<h3 class = "title">Other Projects</h3>
-		<br>
+
+		 
+<div class = "spacing_text2Pic"></div>
+
+
+<div id = "other_proj_wrapper">
+		
 		<div class = "other_proj">
 			<a href = "wetware.html">
 
 				<img class = "other_proj_photo" src = "Portfolio/Wetware/Othercover.jpg">
 
 				<div class = "text_wrapper">
-					<p class = "other_proj title">
+					<div class = "other_proj title">
 						Wetware
-					</p>
+						<div class = "other_proj_descrip">
+							3D Desktop Game
+						</div>
+					</div>
 				</div>
 			</a>
 		</div>
@@ -283,9 +566,12 @@ layout: default
 				<img class = "other_proj_photo" src = "Portfolio/TikTok/Othercover.jpg">
 
 				<div class = "text_wrapper">
-					<p class = "other_proj title">
+					<div class = "other_proj title">
 						TikTok
-					</p>
+						<div class = "other_proj_descrip">
+							AR Creative Tools and Effects
+						</div>
+					</div>
 
 				</div>
 			</a>
@@ -296,9 +582,12 @@ layout: default
 				<img class = "other_proj_photo" src = "Portfolio/Momento/Othercover.jpg">
 
 				<div class = "text_wrapper">
-					<p class = "other_proj title">
+					<div class = "other_proj title">
 						Momento
-					</p>
+						<div class = "other_proj_descrip">
+							XR interactive installation
+						</div>
+					</div>
 
 				</div>
 			</a>
@@ -309,14 +598,15 @@ layout: default
 				<img class = "other_proj_photo" src = "Portfolio/Steelcase/Othercover.jpg">
 
 				<div class = "text_wrapper">
-					<p class = "other_proj title">
+					<div class = "other_proj title">
 						Steelcase Virtual Design
-					</p>
+						<div class = "other_proj_descrip">
+							VR collaborative workspace
+						</div>
+					</div>
 
 				</div>
 			</a>
 		</div>
-
-	</div>
 </div>
 

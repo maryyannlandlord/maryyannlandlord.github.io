@@ -3,11 +3,24 @@
 	<head>
 		<title>Maryyann Crichton</title>
 		<meta name="Maryyann Crichton"
-          content="Empowering others to tell stories.">
+          content="Empowering others to tell stories">
         <meta property="og:image" content="C:\Maryyann\maryyannlandlord.github.io\Portfolio\MemorySlugs\icon.png" />
 		<meta property="og:title" content="Maryyann Crichton" />
 		<meta name="description" content="Empowering others to tell stories." />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="lightbox.css" rel="stylesheet" />
+
+		<!-- lightgallery -->
+		<link type="text/css" rel="stylesheet" href="lightGallery/lightgallery.css" />
+
+    <link type="text/css" rel="stylesheet" href="lightGallery/lg-medium-zoom.css" />
+
+    <link type="text/css" rel="stylesheet" href="lightGallery/lg-zoom.css" />
+
+    <link type="text/css" rel="stylesheet" href="lightGallery/lg-thumbnail.css" />
+
+    <link type="text/css" rel="stylesheet" href="lightGallery/lg-video.css" />
 
 		<link rel="stylesheet" href="style.css">
 		<script src = "jquery-1.11.0.min.js"></script>
@@ -53,7 +66,7 @@
       <div id = "nav">
         <a href="index.html" class = "nav_label {% if page.pageName == "index" %} active {% endif %}">Portfolio</a>
         <a href="Sketches.html" class = "nav_label {% if page.pageName == "sketches" %} active {% endif %}">Sketches</a>
-        <a href="About.html" class = "nav_label nav_label {% if page.pageName == "about" %} active {% endif %}">About</a>
+        <a href="About.html" class = "nav_label nav_label {% if page.pageName == "about" %} active {% endif %}">About Me</a>
         <!--<a href="Resume.pdf" target = "blank" class = "nav_label">Resume</a> !-->
       </div>
 
@@ -68,14 +81,25 @@
 		<div id = "contact" >
 
 			<p>
-			<!--<a id = "insta" target = "_blank" href = "https://www.instagram.com/l0nelypeach/">
-			<img class = "socialIcon" src = "insta_icon2.png"> Instagram</a>!-->
 
 			<img class = "socialIcon" src = "email_icon2.png"> mlandlor@gmail.com
 
 			</p>
 
 		</div>
+
+		<!-- lightgallery plugins-->
+		<script src="lightGallery/lightgallery.umd.js"></script>
+
+
+  	<script src="lightGallery/lg-medium-zoom.umd.js"></script>
+  	<script src="lightGallery/lg-zoom.umd.js"></script>
+  	<script src="lightGallery/lg-thumbnail.umd.js"></script>
+  	<script src="lightGallery/lg-video.umd.js"></script>
+  	<script src="lightGallery/lg-vimeo-thumbnail.umd.js"></script>
+   	
+  	<!-- project galleries-->
+  	<script src = "Galleries.js"></script>
 
 		<script src = "lightbox.js"></script>
 		<script>
@@ -84,12 +108,12 @@
 				'resizeDuration': 0
 			});
 
-	        $(function() {
-	            Galleria.run('#galleria', {
-	            	// width: 100,
-	            	// height: 400
-	            });
-	        });
+	        // $(function() {
+	        //     Galleria.run('#galleria', {
+	        //     	// width: 100,
+	        //     	// height: 400
+	        //     });
+	        // });
 
 		</script>
 

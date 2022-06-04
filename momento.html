@@ -1,333 +1,1000 @@
 ---
 layout: default
 ---
-			
-<div class = "content"> 
+<div class = "content" style ="padding-top:10px; margin-top: 0;">
 
-	<div class = "videoWrapper 1" id = "momento1">
-
-		<img class = "VideoCover 1" src = "Portfolio/Momento/videoCover.jpg"/>
-
+	<div class = "videoWrapper 1" id = "momento2">
+		<img class = "VideoCover 1" src = "Portfolio/Momento/videoCover3.jpg"/>	
 		<div class = "playButton_wrapper">
 			<img class = "playButton 1" src = "play.png"/>
-			<p class = "videoTitle 1">Ama's Momento (Introduction)</p>
+			<p class = "videoTitle 1">Ama's Momento</p>
 		</div>
 		
 	</div>
+
+	<div id = "flex_descrip_wrapper">
+
+		<div class = "info_wrapper" id = "info-one">
+			<h1 class = "title">Ama's Momento</h1>
+			<p class = "info_secondary">Project Lead / Narrative Designer / Prototyper </p>
+		</div>
+
+		<div class = "info_wrapper" id = "info-two">
+			<h3 class = "subSection">Project Goals</h3>
+			<p class = "textContent"> 
+				Capture the story, memories, and dreams of a grandmother through a mix of VR, AR, and installations. 
+			</p>
+		</div>
+
+
+		<div class = "info_wrapper" id = "info-three">
+			
+			<a class = "link" target = _blank href = "https://www.amavr.com/" style = "text-decoration: underline;">Project Website</a>
+			<p class = "info_secondary">Maya / Unity / Oculus Rift / Adobe Suite / Photogrammetry / Projection Mapping</p>
+			<a class = "link" target = _blank href = "https://sidequestvr.com/app/565/amas-momento" style = "text-decoration: underline;">Experience in SideQuest</a> 
+
+			<div id = "flex_awards">	
+
+				<div  class = "pressIcons">
+
+					<a target = _blank href = "https://www.gamesforchange.org/professional_service/vr-for-change-alcove-challenge/" class = "pressIcons">
+						<img  src = "Portfolio/Momento/vrForChange.jpg"/>
+
+					</a>
+				</div>
+
+				<div  class = "pressIcons">
+					<a target = _blank href = "https://www.indiecade.com/amas-momento/" class = "pressIcons">
+						<img  src = "Portfolio/Momento/indiecade.jpg"/>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+
+
+		<div class = "info_wrapper" id = "info-four">
+			<h3 class = "subSection">Summary</h3>
+			<p class = "textContent"> 
+				Ama’s Momento is a mixed reality installation dedicated to capturing the story of a grandmother who dreams of building an art museum to preserve Taiwanese culture; the experience transforms Ama's dream into a virtual museum and sparks a movement that makes her dream a reality.
+			</p>
+		</div>
+
+	</div>
+
+	<div class = "divider">
+	</div>
+
+
+</div>
+
+	<div id = "flex-tableContents">
+		<a class = "tableLabel" href = "#research_concept">
+			research & concept dev
+		</a>
+		<a class = "tableLabel" href = "#prototyping">
+			prototyping
+		</a>
+		<a class = "tableLabel" id = "paintedcornerTitle" href = "#paintedCorner">
+			ama's painted corner
+		</a>
+		<a class = "tableLabel"  style = "border:none"  href = "#finalInstallation">
+			ama's momento
+		</a>
+ 
+	</div>
+
+<div id = "spacing_stickyNav"></div>
+ 
 	
+<!--RESEARCH AND CONCEPT DEVELOPMENT!-->
+
+
+<div class = "content_wrapper_dark section" id = "research_concept">
+
+	<div class = "content">
+
+	<div class = "content_mid">
+		<h2 class = "title">Research & Concept Development</h2>
+		<p class = "textContent wide"> 
+
+			 Ama means "grandmother" in Taiwanese. Ama's full name is Yoko Kung. She was both our audience and the story's main character. To better understandstand her story and her home, we, as a mix of 11 designers, engineers, and producers traveled to Taiwan to meet her. 
+			 
+		</p>
+	</div>
+	<div class = "content_mid">
+		<h3 class = "title">Taiwan Research Trip</h3>
+		<p class = "textContent wide"> 
+			Our goal in Taiwan was to gather footage of Yoko's home and learn more about her as a person. She hosted all of us in her apartment. There, we learned of Yoko's passion and respect for art; her modesty and hospitality made her everyone's Ama. We wanted to capture her in building the experience. 
+		</p>
+	</div>
+
+
+		<div class = "content_wide">
+
+			
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper x2 left"> 
+					<video width = "100%" autoplay muted loop>
+						<source src = "Portfolio/Momento/researchTrip.webm" type = "video/webm">
+					</video>
+					<p class = "caption">research trip; documentation from Taiwan</p>
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					<div class = "textContent right">
+						<p><strong> Trip Highlights : </strong></p>
+						<br>
+						<p>Much of trip we spent attending different activities with Ama. We documented every location, which created key locations for the project.</p>
+						<br>
+						<p>&#8226 Old Home</p>
+						<br>
+						<p>&#8226 Artist Lou's Home</p>
+						<br>
+						<p>&#8226 Morning dance in the park</p>
+						<br>
+						<p>&#8226 Tennis Courts</p>
+						<br>
+						<p>&#8226 Golf Course</p>
+						<br>
+						<p>&#8226 Ama's highschool</p>
+						<br>
+
+					
+						</div>
+
+				</div>
+			</div>
+
+			<div class = "spacing_afterCaption"></div>
+
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper x2 left"> 
+					<div class = "textContent right">
+						<p style = "font-weight: bold;">Experience goals : </p>
+						<br>
+						<p>Using our experience from Taiwan, we created 3 experience goals. </p>
+						<br>
+						<p>1. Depict Ama's life in a relatable and authentic way</p>
+						<br>
+						<p>2. Capture Ama's dream of building a museum</p>
+						<br>
+						<p>3. Motivate users with a call to action</p>
+						<br>
+						<p> Where did we exist in this story?</p>
+						</div>
+
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					 
+					<div class="embed-container"><iframe src='https://player.vimeo.com/video/326499057?autoplay=1&autopause=0&loop=1&muted=1' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay></iframe></div> 
+
+
+		
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class = "spacing_subsection"></div>
+	</div>
+
 
 	
-	<div id = "info_wrapper">
-		<div id = "title_wrapper">
-			<h1 class = "title">[Ama's] Momento</h1>
-			<div class = "exhibit"><a href = "https://www.indiecade.com/amas-momento/" class = "link">Indiecade Winner</a></div>
-			<div class = "exhibit"><a href = "http://festival.vconline.org/2018/" class = "link">Los Angeles Asian Pacific Film Festival</a></div>
-			<div class = "exhibit"><a href = "https://pacificasiamuseum.usc.edu/" class = "link">USC Pacific Asia Museum</a></div>
-			<p id = "role"> Narrative Designer / Prototyper</p>
+<!--PROTOTYPING!-->
+
+<div class = "content_wrapper_light section" id = "prototyping">
+
+	<div class = "content">
+
+	<div class = "content_mid">
+		<h2 class = "title">Prototyping</h2>
+		<p class = "textContent wide"> 
+
+			After returning from Taiwan, we reflected back on a hundred hours of footage we took. We had the experience goals, but where did our team exist in this story? Much of the footage also included us. To explore this topic and use this as an opportunity to experiment with interaction, we built multiple rapid prototypes to show what this journey meant for us. 
+			 
+		</p>
+	</div>
+	<div class = "content_mid">
+		<h3 class = "title">Folding Dumplings with 姥姥</h3>
+		<p class = "textContent wide"> 
+			A big story challenge is designing a relatable narrative around Ama for an audience who had never met her. My first exploration was using webVR and simple interactions to capture the feeling of folding dumplings at home with my Grandmother (姥姥) and share it with an audience. In this experience, the user selects dumpling skins to fold them into dumplings, while listening to 姥姥 explain the steps for creating authentic dumplings. 
+		</p>
+	</div>
+
+
+		<div class = "content_wide">
+
+			
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper x2"> 
+					<video width = "100%" autoplay muted loop>
+						<source src = "Portfolio/Momento/dumplings.mp4" type = "video/mp4">
+					</video>
+					<p class = "caption">webVR prototype: tying together cultures</p>
+				</div>
+				<div class = "photo_wrapper x2 right" style = "align-self: center; padding-bottom: 93px;"> 
+					<div class = "textContent right">
+						<p style = "font-weight: bold;">Key Learnings: </p>
+						<br>
+						<p>1. Simple interactions allow space to digest more complex audio</p>
+						<br>
+						<p>2. Unexpected, fun results (bouncing dumplings) create endless joy</p>
+						<br>
+						<p>3. Signifiers from the web do not translate into VR space</p>
+						<br>	 
+					
+						</div>
+
+				</div>
+			</div>
+
+			<div class = "spacing_afterCaption"></div>
+
+			<div class = "content_mid">
+				<h3 class = "title">Golf with Friends</h3>
+				<p class = "textContent wide"> 
+					 After creating personal prototypes, we united our learnings into group prototypes. <i>Golf with Friends</i> referred to our time playing golf with Ama in Taiwan. We combined the action of VR golfing with 360 footage of our golfing journey. 
+				</p>
+			</div>
+
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper x2 left" style = "align-self: center; padding-bottom: 93px;"> 
+					<div class = "textContent right">
+						<p style = "font-weight: bold;">Key Learnings :</p>
+						<br>
+						<p>1. Affecting virtual objects through familiar actions is satisfying</p>
+						<br>
+						<p>2. Intersecting 360 footage with 3D objects can make a space feel small</p>
+						<br>
+						<p>3. Giving users "checkpoint" feedback gives better sense of goals </p>
+						
+						<br>
+						
+						</div>
+
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					<video width = "100%" autoplay muted loop>
+						<source src = "Portfolio/Momento/golf.mp4" type = "video/mp4">
+					</video>
+				</div>
+			</div>
+
+			<div class = "spacing_afterCaption"></div>
+			<div class = "divider"></div>
+			<div class = content_mid>
+				 <div class = "textContent wide">
+				 	<p><strong>Interaction Goals: </strong></p>
+  
+				 	<p>Creating these experiences helped us realize importance of relatability. To encourage a 'call to action' from the user, we must make the experience relatable to their own relationships.</p>
+ 
+				 	<p>1. Build empathy through skeuomorphic interaction</p>
+ 
+				 	<p>2. Create joy by defying expectations</p>
+
+				 	<p>3. Highlight intergenerational change</p>
+				 </div>
+			</div>
+
+		</div>
+ 
+	</div>
+</div>
+
+<!-- THE PAINTED CORNER-->
+
+<div class = "content_wrapper_dark section" id = "paintedCorner">
+	<div class = "content">
+
+	<div class = content_wide>
+
+		<div class = "content_mid">
+			<h2 class = "title">Ama's Painted Corner</h2>
+			<p class = "textContent wide"> 
+				Our goal was to create an experience that showcased Ama's life and dream of creating a museum, while preserving the relatability of Ama being 'an ordinary grandma'. <i>The Painted Corner</i> was our first attempt to combine all of these elements into one interactive installation. 
+			</p>
+		</div>
+
+		<div class = "content_mid">
+			<h3 class = "title">Ama's Painted Corner consists of 6 sections</h3>
+		 
+
+			<div class = "spacing_text2Pic"></div>
+
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/photoTimline.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>A. Photo Timeline</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/amaDream.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>B. Ama's Dream</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/preservation.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>C. Virtual Preservation</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/challenges.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>D. Ama's Struggle</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/nextGeneration.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>E. Next Generation</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/dialogue.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>F. Dialogue</strong></p>
+				</div>
+			</div>
+		</div>
+
+		<div class = "content_mid">
+
+			<h3 class = "title">Narrative Flow</h3>
+			<p class = "textContent wide"> 
+				I created the narrative flow for the project. Each section contained one team member introduced the goals for the room. 
+			</p>
+
+			<div class = "spacing_afterCaption"></div>
+
+
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper full" style = "text-align: center;">
+					<img style = "width:  88%" src = "Portfolio/Momento/paintedCorner.png">
+					<p class = "caption">Ama's Painted Corner experience layout</p>
+				</div>
+			</div>
+		</div>
+
+		<div class = "spacing_afterCaption"></div>
+
+ 
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos" >
+					<img  style = "width: 80%" src = "Portfolio/Momento/photoTimline.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>A &#8212 Photo Timeline</strong></p>
+					<p>
+					 Introductary video describing the goals for this project, followed by a short timeline of Ama's life made of physical photos. Each photo has a date and small description in the back. 
+					 </p>
+					 <p>
+					 Guests learn briefly about Ama's background. 
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/amaDream.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>B	&#8212 Ama's Dream</strong></p>
+					<p>
+					 Consists of 3 physical elements from Ama's life &#8212 tennis racket, painting, photo. Guests can read about each object on description cards.
+					 </p>
+					 <p>
+					  Builds more context around Ama's character around relatable hobbies and interests. 
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/preservation.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>C 	&#8212 Virtual Preservation</strong></p>
+					<p>
+					AR painted portrait of Ama paired with her motivational quote. Introduces her hope of preservating Taiwanese culture through her painting collection.  
+					</p>
+					 <p>
+					 Guests learn about that Ama is highly ambitious and has a dream to build an art museum. 
+					 </p>				
+				</div>
+
+			</div>
+
+		</div>
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/challenges.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>D 	&#8212 Challenges</strong></p>
+					<p>
+					 Short film introducing Ama's childhood and challenges she faced while trying to build her museum. 
+					 </p>
+					 <p> 
+					 Guests have a chance to empathize with Ama's struggles.
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/nextGeneration.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>E 	&#8212 Photo Carousel & Next Generation</strong></p>
+					<p>
+					  Interactive VR carousel projector featuring timline of photos of Ama, leading up to the team's trip. Continues with the team's journey and influence. </p>
+					 <p> 
+					 	Guests reconnect with Ama's past and discover the thread of influence from our role in this story. 
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/dialogue.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>F 	&#8212 Dialogue</strong></p>
+					<p>
+					 Open-dialogue with the team about the experience and the importance of close relationships.</p>
+					 <p> 
+						Guests learn more about our journey and how the experience impacted them.
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+		 
+		<div class = "spacing_subsection"></div>
+
+		<div class = "content_mid">
+
+			<h3 class = "title">Playtesting</h3>
+			<p class = "textContent wide"> 
+				We ran playtests for 2 weeks and gathered a total of 30 unique feedbacks from all the guests. Through the feedback, we determined the most successful and lacking sections of the experience. 
+		 	</p>
+
+		</div>
+
+		<div class = "videoWrapper 2" id = "momento3">
+			<img class = "VideoCover 2" src = "Portfolio/Momento/videoCover2.jpg"/>	
+			<div class = "playButton_wrapper">
+			<img class = "playButton 2" src = "play.png"/>
+			<p class = "videoTitle 2">The Painted Corner</p>
+			</div>
+		</div>
+
+		 <div class = "spacing_afterCaption"></div>
+
+
+
+		 <div class = "content_mid">
+
+		 	<div class = "photos_wrapper">
+				<div class = "photo_wrapper x2 left"> 
+					<div class = "textContent right">
+						<p style = "font-weight: bold;">Pros :</p>
+						<br>
+						<p>1. Guests connected emotionally with overall narrative</p>
+						<br>
+						<p>2. Pairing familiar interactions with digital objects inside the novelty of VR brought joy</p>
+						<br>
+						<p>3. Guest clearly understood Ama's dream and motive</p>
+						
+						<br>
+						
+						</div>
+
+				</div>
+				<div class = "photo_wrapper x2 right"> 
+					<div class = "textContent right">
+						<p style = "font-weight: bold;">Cons :</p>
+						<br>
+						<p>1. Physical objects felt disconnected from rest of experience</p>
+						<br>
+						<p>2. Overall not enough context during experience introduction</p>
+						<br>
+						<p>3. Not enough emphasize on Ama's painting collection</p>
+						
+						<br>
+						
+						</div>
+				</div>
+				
+			</div>
+
+			<div class = "spacing_text2Pic"></div>
+			<div class = "textContent wide"><p>Since the photo timeline was not a linearly-driven experience, guests often glanced quickly or skipped through descriptions, resulting in a lack of context around Ama's life.</p></div>
+ 
+		 </div>
+
+
+		<div class = "photos_wrapper" id = "momento-paintedCorner">
+			<a class = "photo_wrapper full" href = "Portfolio/Momento/still1.jpg">
+				<img  class = "galleryThumb" src = "Portfolio/Momento/still1.jpg">
+			</a>
+			<a class = "photo_wrapper x2 left" href = "Portfolio/Momento/still2.jpg"> 
+				<img  class = "galleryThumb"  src = "Portfolio/Momento/still2.jpg">
+			</a>
+			<a class = "photo_wrapper x2 right" href = "Portfolio/Momento/still5.jpg">
+				<img  class = "galleryThumb"  src = "Portfolio/Momento/still5.jpg">
+			</a>
+			<a class = "photo_wrapper full" href = "Portfolio/Momento/still4.jpg">
+				<img  class = "galleryThumb"  src = "Portfolio/Momento/still4.jpg">
+			</a>
+		</div>
+
+		 
+		
+ 		<div class = "spacing_afterCaption"></div>
+
+		 <div id = "credits_wrapper">
+				<button onclick = "showCredits('credits')">
+					<h2 class = "title">Credits</h2>
+				</button>
+				<div>
+					<div id = "credits">
+
+						<h3 style = "text-align: center;">Ama's Painted Corner</h3>
+						<div class = "divider"></div>
+					
+						<div class = "credits_column">
+						<div class = "credit">
+							<h4>Team Lead</h4>
+							<p>Awu Chen</p>
+						</div>
+
+						<div class = "credit">
+							<h4>Producer</h4>
+							<p>Anahita Dalmia</p>
+							<p>Kevin Ke</p>
+							<p>Nicholas Pudjarminta</p>
+						</div>
+						<div class = "credit">
+							<h4>Narrative Designer</h4>
+							<p>Maryyann Crichton</p>
+							<p>Keshav Prasad</p>
+						</div>
+						
+					</div>
+
+					<div class = "credits_column">
+						<div class = "credit">
+							<h4>Experience Designer</h4>
+							<p>Gabriela Purri</p>
+							<p>Sagar Ramesh</p>
+							<p>Yimin Zhang</p>
+						</div>
+						<div class = "credit">
+							<h4>2D / 360 Editor</h4>
+							<p>Kevin Ke</p>
+							<p>Nicholas Pudjarminta</p>
+						</div>
+						<div class = "credit">
+							<h4>Engineering</h4>
+							<p>Aakash Shanbhag</p>
+							<p>Chinmay Chinara</p>
+							<p>Kevin Wu</p>
+						</div>
+
+					</div>
+					
+					<div class = "credits_column">
+						<div class = "credit">
+							<h4>Prototyper</h4>
+							<p>Gabriela Purri</p>
+							<p>Maryyann Crichton</p>
+							<p>Sagar Ramesh</p>
+							<p>Yimin Zhang</p>
+							<p>Awu Chen</p>
+							<p>Keshav Prasad</p>
+							<p>Kevin Ke</p>
+							<p>Nicholas Pudjarminta</p>
+						</div>
+					</div>
+
+
+
+					</div> 
+				</div>
+			</div>
+
+	 
+
+	</div>
+	</div>
+</div>
+
+<!-- AMA'S MOMENTO -->
+
+
+<div class = "content_wrapper_light section" id = "finalInstallation">
+	<div class = "content">
+
+	<div class = content_wide>
+
+		<div class = "content_mid">
+			<h2 class = "title">Ama's Momento</h2>
+			<p class = "textContent wide"> 
+				After almost two years of traveling, prototyping, and collecting feedback from <i>Ama's Painted Corner</i>, we created the final version of <i>Ama's Momento</i> that fully showed Ama's story and her dreams of creating an art museum. As a project lead, I used my experience from creating <i>Ama's Painted Corner </i> and meeting Ama, to guide new designers and engineers in better understanding Ama's story and personality.
+			</p>
+		</div>
+		<div class = "content_mid">
+			<h3 class = "title">Ama's Momento Exhibit consists of 6 sections</h3>
+		 
+
+			<div class = "spacing_text2Pic"></div>
+
+			<div class = "photos_wrapper">
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/Gallery.PNG" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>1. Memory Gallery</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/AmaJourney.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>2. Ama's Journey</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/AR-t.PNG" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>3. AR-t Gallery</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/projectedBoundaries.PNG" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>4. Project Boundaries</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/community.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>5. Community Dialogue</strong></p>
+				</div>
+				<div class = "photo_wrapper up3 left ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/museum.png" >
+					<p class = "caption" style = "margin-top: 6px;"><strong>6. Virtual Museum</strong></p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class = "content_mid">
+			<h3 class = "title">Experience & Story Flow</h3>
+			<p class = "textContent wide"> 
+				 We used feedback from <i>Ama's Painted Corner</i> to update this installation. </p><p> We added more interactivity with sticky notes to the photo gallery and an AR timeline that contextualized the photo events in Ama's life. Additionally, we included an engaging mobile AR animation component to a larger collection of paintings. Lastly we switched the order of rooms and inserted the community dialogue before the final VR section, giving guests a chance to reflect and clear up any uncertainties with Awu, Ama's grandson. 
+			</p>
+		</div>
+
+		
+		
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper x2 left" style = "text-align: center;"> 
+				
+				
+				 
+					<img id = "w69" src = "Portfolio/Momento/paintedCorner.png">
+					<p class = "caption">Ama's Painted Corner experience layout</p>
+				 
+				<div class = "spacing_text2Pic"></div>
+				
+			</div>
+			<div class = "photo_wrapper x2 right"> 
+				<img style = "width: 100%" src = "Portfolio/Momento/layout.webp">
+				<p class = "caption">Ama's Momento final layout</p>
+				<div class = "spacing_text2Pic"></div>
+				
+			</div>
+
+		</div>
+
+		<div class = "spacing_afterCaption"></div>
+		<div class = "content_mid">
+			<div class = "textContent wide">
+				<p><strong>Story Flow</strong></p>
+			</div>
+		</div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri ">
+					<img  style = "width: 80%" src = "Portfolio/Momento/Gallery.PNG" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					 
+						<strong>LOBBY &#8212 Memory Gallery </strong></p>
+						<p>
+					 	Light table consisting of photos from Ama's life. Guests can write their thoughts on sticky notes around the table. </p>
+					 	<p>
+					 Acts as both opening and closing experience. Gives a chance to personalize the project and welcomes participation from the community. 
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "spacing_text2Pic"></div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/AmaJourney.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+ 
+						<p>
+						<strong>ROOM A 	&#8212 Ama's Journey</strong></p>
+						<p>
+					 	Light table with map of Ama's journey across Taiwan and America. Guests can explore a directed AR experience and listen to Ama talk about her life from an IPAD.</p>
+					 	<p>
+					 	Sequences Ama's memories and gives clear story on her background. 
+						 </p>
+ 
+				
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class = "spacing_text2Pic"></div>
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/AR-t.PNG" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>ROOM B 	&#8212 AR-t Gallery</strong></p>
+					<p>
+					 Gallery of several physical painting duplicates from Ama's personal collection. Guests can scan paintings with their phones to watch AR animations and learn more about the painting's importance.</p>
+					 <p>
+					 Introduces the importance of Ama's personal collection. Helps guests empathize with the preciousness of these paintings through Ama's voiceover.  
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/projectedBoundaries.PNG" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>ROOM C	&#8212 Projected Boundaries</strong></p>
+					<p>
+					 Projection mapping introducing Ama's upbringing, her dream of sharing her painting collection, and the challenges that kept her dream from becoming reality.</p>
+					 <p>
+					 Builds up empathy for Ama's difficult journey and motivation.
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/community.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>ROOM D 	&#8212 Communal Room</strong></p>
+					<p>
+							
+						A moment of reflection and dialogue with Awu, Ama's grandson.
+							</p>
+					 <p>
+					 Guests reflect and discuss with Awu about the experience so far after learning about Ama's journey. Guests also learn about our role in creating this experience for Ama. 
+					 </p>
+
+				
+				</div>
+
+			</div>
+
+		</div>
+		<div class = "photos_wrapper">
+			<div class = "photo_wrapper up3 tri amaSectionPhotos">
+					<img  style = "width: 80%" src = "Portfolio/Momento/museum.png" >
+				</div>
+			<div class = "photo_wrapper x2 right" style = "align-self: center;"> 
+				<div class = "textContent">
+					<p>
+					<strong>ROOM E 	&#8212 Virtual Musuem</strong></p>
+					<p>
+					 A VR museum showcasing Ama's entire painting collection and several VR pieces the team created together. This is our gift to Ama. </p>
+					 <p> 
+					 	 Guests get a postive payoff following Ama's hindered attempt to create an art museum. They leave with a feeling of renewed hope.
+					 </p>
+				
+				</div>
+
+			</div>
+
+		</div>
+ 
+
+		<div class = "spacing_afterCaption"></div>
+
+		<div class = "content_mid" style = "text-align: center;">
+			<h3 class = "title">" <i>Heart-achingly thoughtful</i> " - LA Times</h3>
 			
 		</div>
-		
 
-		<div class = "summary">
-			<p>“Ama” in Taiwanese translates to “Grandmother,” and Ama’s Momento is a museum for Yoko Kung (龔玉葉), a grandmother of our dear team lead. Ama's Momento is a VR installation that serves as a physical manifestation of her dreams. By sharing Ama’s stories, we are creating an intergenerational community through personal storytelling. On December 2017, the Momento team traveled to Taiwan. Together we embarked on this journey of self discovery to reconnect with our roots.</p>
-			<br>
-			<!--<p><a class = "link" href = "https://www.amasmomento.com/"> Momento Website </a></p>!-->
+		<div class = "content_mid">
+			<h3 class = "title">Final Results</h3>
+			<p class = "textContent wide"> 
+				The final result was a 20 minute mixed reality installation, which we showed at various different musuems and conferences, including Indiecade, VR for change, LA Asia Pacific Film Festival,  Japanese American National Museum,Tainan Art Museum and Infinity Festival. We were met with overwhelming support and positive response from the community, with many asking how they could accoomplish a similar experience for their loved ones. </p>
+				<p>After displaying the experience at the Tainan Art Musuem, local culture officials reconnected with Ama and approved her proposal to create an art museum, signed off by the Taiwanese Government. 
+			</p>
+		</div>
+		<div class = "photos_wrapper" id = "momento-gifs">
+			<a class = "photo_wrapper x2 left" href = "Portfolio/Momento/tabletAR.gif">
+				<img  class = "galleryThumb" src = "Portfolio/Momento/tabletAR.gif">
+			</a>
+			<a class = "photo_wrapper x2 right" href = "Portfolio/Momento/mobileAR.gif">
+				<img  class = "galleryThumb"  src = "Portfolio/Momento/mobileAR.gif">
+			</a>
+		 
+
+
+			<a class = "photo_wrapper full" href = "Portfolio/Momento/projectmapping.gif">
+				<img  class = "galleryThumb" src = "Portfolio/Momento/projectmapping.gif">
+			</a>
+
+
+			<a class = "photo_wrapper x2 left" href = "Portfolio/Momento/photogrammetry.gif">
+				<img  class = "galleryThumb"  src = "Portfolio/Momento/photogrammetry.gif">
+			</a>
+			<a class = "photo_wrapper x2 right" href = "Portfolio/Momento/360Filmmaking.gif">
+				<img  class = "galleryThumb"  src = "Portfolio/Momento/360Filmmaking.gif">
+			</a>
+
 		</div>
 
 
-		<br>
-		<p id = "software">Maya / Unity / Oculus Rift / Adobe Suite / Photogrammetry / Projection Mapping</p>
-		<br>
-
-
-		<div class = "videoWrapper 2" id = "momento2">
-		<img class = "VideoCover 2" src = "Portfolio/Momento/video2Cover.jpg"/>	
-
-		<div class = "playButton_wrapper 2">
-			<img  class = "playButton 2" src = "play.png"/>
-			<p class = "videoTitle 2">Ama's Painted Corner (USC Installation)</p>
-		</div>
-		
+	</div>		
 	</div>
+</div>		
+ 
+ <div class = "content">
 
 
-		
-		
-	</div>
-
-	
-
-
-	<div id = "credits_wrapper">
-			<button onclick = "showCredits('credits')">
-				<h3 class = "title">Credits</h3>
+	 <div id = "credits_wrapper">
+			<button onclick = "showCredits('credits_2')">
+				<h2 class = "title">Credits</h2>
 			</button>
 			<div>
-				<div id = "credits">
-				<div style = "margin:0px; text-align: center; padding:15px; ">
-					<h3 style = "border: 0px; border-bottom: 1px solid #b497ab; width:auto; padding:0px;margin:0px; margin-bottom: 25px " class = "title">Title</h3>
-				</div>
+				<div id = "credits_2">
+
+					<h3 style = "text-align: center;">Ama's Momento</h3>
+					<div class = "divider"></div>
 				
 					<div class = "credits_column">
 					<div class = "credit">
-						<h2>Team Lead</h2>
+						<h4>Director</h4>
 						<p>Awu Chen</p>
 					</div>
 
 					<div class = "credit">
-						<h2>Producer</h2>
-						<p>Anahita Dalmia</p>
+						<h4>Project Leads</h4>
 						<p>Kevin Ke</p>
+						<p>Kevin Wu</p>
+						<p>Maryyann Crichton</p>
 						<p>Nicholas Pudjarminta</p>
 					</div>
 					<div class = "credit">
-						<h2>Narrative Designer</h2>
-						<p>Maryyann Landlord</p>
-						<p>Keshav Prasad</p>
+						<h4>Visual Design Team</h4>
+						<p>Alexandra thomopoulos
+						<br>Cameron kostopoulos
+						<br>David guevara
+						<br>Georgina chiou
+						<br>Shaoyu su
+						<br>Sharleen chen
+						<br>Shine chang</p>
+											
 					</div>
 					
 				</div>
 
 				<div class = "credits_column">
 					<div class = "credit">
-						<h2>Experience Design</h2>
-						<p>Gabriela Purri</p>
-						<p>Sagar Ramesh</p>
-						<p>Yimin Zhang</p>
+						<h4>Engineering Team</h4>
+						<p>Hanzo huang
+						<br>John marshall
+						<br>Mingxuan li
+						<br>Ralston louie
+						<br>Steph ng
+						</p>
 					</div>
 					<div class = "credit">
-						<h2>2D / 360 Editor</h2>
-						<p>Kevin Ke</p>
-						<p>Nicholas Pudjarminta</p>
+						<h4>Physical Production</h4>
+						<p>Brenda garcia
+						<br>Janelle reyes
+						<br>Sabrina stamnes
+						<strong style = "color:black"><br>Contributors</strong>
+						<br>Aakash shanbhag
+						<br>Anahita dahlmia
+						<br>Chinmay chinara
+						<br>Gabriela purri
+						<br>Keshav prasad
+						<br>Max good
+						<br>Sagar ramesh
+						<br>Yimin zhang
+											
+						</p>
+
 					</div>
 					<div class = "credit">
-						<h2>Engineering</h2>
-						<p>Aakash Shanbhag</p>
-						<p>Chinmay Chinara</p>
-						<p>Kevin Wu</p>
+						<h4>Advisors</h4>
+						<p>Marientina gotsis
+						<br>Candace reckinger
+						<br>Michael patterson</p>
 					</div>
 
 				</div>
 				
 				<div class = "credits_column">
 					<div class = "credit">
-						<h2>Prototyper</h2>
-						<p>Gabriela Purri</p>
-						<p>Maryyann Landlord</p>
-						<p>Sagar Ramesh</p>
-						<p>Yimin Zhang</p>
-						<p>Awu Chen</p>
-						<p>Keshav Prasad</p>
-						<p>Kevin Ke</p>
-						<p>Nicholas Pudjarminta</p>
+						<h4>Sponsor</h4>
+						<p>USC Immersive Media Lab
+						<br>USC Creative Media & 
+						<br>Behavioral Health Center</p>
 					</div>
 				</div>
 
 
 
-				</div> 
-			</div>
-		</div>
-
-
-	<div id = "galleries_wrapper">
-
-		<div class = "gallery_wrapper">
-			<h3 class = "title">Process</h3>
-
-			<div class = "photos_wrapper" style = "margin-top:35px;">
-
-				<div class = "photo_wrapper x2 full"> 
-					<img class = "photo" src = "Portfolio/Momento/still12.JPG">
-					<p class = "caption">Interviewing Ama and Artist Lou in Taiwan</p>
-				</div>
-				
-			</div>
-			
-			<div class = "photos_wrapper"  style = "margin-top:35px;">
-				<div class = "photo_wrapper x2 left"> 
-					<video width = "70%" autoplay muted loop>
-						<source src = "Portfolio/Momento/dumplings.mp4" type = "video/mp4">
-					</video>
-					<p class = "caption">webVR prototype: tying together cultures</p>
-				</div>
-
-				<div class = "photo_wrapper x2 right">
-					<p class = "summary design">Ama's Momento is an ongoing 3 year long project involving multiple stages of design.</p>
-					<br>
-					<p class = "summary design"> 1. interview & research</p>
-					<br>
-					<p class = "summary design"> 2. prototyping & playtest</p>
-					<br>
-					<p class = "summary design"> 3. experience flow & physical installation</p>
-					<br>
-					<p class = "summary design">
-						Since Awu's Ama was such an essential part of this experience, our entire team flew to Taiwan to meet her and learn her story. We participated in many of her daily activities such as dancing, tennis, and golf, and we visited her dear friend Artist Luo to learn about their friendship. As a narrative designer on the project, the research phase was integral to the design process. I kept a journal of both important quotes from Ama and observations of the locations we traveled to that would be crucial to the story arch. These would later be used in prototypes.
-					</p>
-					<br>
-					<p class = "summary design">
-						One of the prototypes I created from scratch was a webVR dumpling folding experience in which players folded dumplings while listening to my grandmother teach the dumpling creation process. As you click on dumpling skins, the dumplings instantly pop up and bounce around the room. I wanted to capture the joy I felt whenever I folded dumplings with my grandmother.   
-					</p>
-					<br>
-					<p class = "summary design"> I knew a big story challenge would be designing a relatable narrative around Ama for an audience who had never met her. I had felt a certain connection to Ama even through we were not related because she reminded me of my own grandmother. I tackled the challenge through the dumpling folding prototype by focusing on my own grandmother but bringing in 360 videos from our Taiwan trip to tie these emotional experiences together. We later expanded on this idea by asking audience members to send in pictures of their own loved ones which we displayed at the end of the experience.</p>
-				</div>
-			</div>
-
-
-			<div class = "photos_wrapper"  style = "margin-top:35px;">
-				<div class = "photo_wrapper x2 left"> 
-					<video width = "100%" autoplay muted loop>
-						<source src = "Portfolio/Momento/scoreboard.mp4" type = "video/mp4">
-					</video>
-					<p class = "caption">VR prototype: designing progression for players</p>
-				</div>
-
-				<div class = "photo_wrapper x2 right">
-					<p class = "summary design">The next phase of prototypes focused on experiences we shared with Ama. We collaborated on VR prototypes such as this golfing game that displayed photos and videos from the trip when played. I designed a score card that would keep track of the player's "scores" in the game. This score card gave player's a sense of progress as they filled out the card with each swing.</p>
-					<br>
-					<p class = "summary design">
-						To prepare for our installation, I redesigned our narrative / experience flow that would tie together each part of the experience. 
-					</p>
-					<br>
-					<p class = "summary design"> 1. Taiwanese Identity: Introduction of Ama's story through AR map</p>
-					<br>
-					<p class = "summary design"> 2. AR-t Gallery: Story behind AR paintings in Ama's collection</p>
-					<br>
-					<p class = "summary design"> 3. Projected Boundaries: Introducing obstacles in Ama's life using projection mapping</p>
-					<br>
-					<p class = "summary design"> 4. Community Dialogue: 1-1 tea time with Awu to reflect on story so far</p>
-					<br>
-					<p class = "summary design"> 5. Virtual Museum: VR journey through virtual museum of Ama's painting collection</p>
-				</div>
-			</div>
-
-			<div class = "photos_wrapper" style = "margin-top:35px">
-				<div class = "photo_wrapper x2 left"> 
-					<video width = "100%" autoplay muted loop>
-						<source src = "Portfolio/Momento/storyflow.mp4" type = "video/mp4">
-					</video>
-					<p class = "caption">LA Asian Film Festival projection room narrative flow ; collab with Kevin Ke, Cameron Kostopoulous, Georgina Chiou</p>
-				</div>
-
-				<div class = "photo_wrapper x2 right">
-					<p class = "summary design"> In addition to the overall narrative flow of the installation, I co-directed the Projected Boundaries room, which featured projection mapping and 2D media about the struggles in Ama's life as she pushed to create a Taiwanese art museum for her collection. Since this portion of the experience was linear, we pushed for a traditional approach through the use of story outline, storyboarding, animatic, and final pass. </p>
-					<br>
-
-
-				</div>
-
-			</div>
-			
-		</div>
-
-
-
-		<div class = "gallery_wrapper">
-			<h3 class = "title">Stills</h3>
-			<div class = "summary" style = "margin-top:0px">
-				<p> </p>
-			</div>
-			<br>
-			<div class = "photos_wrapper">
-				<div class = "photo_wrapper x2 left"> 
-					<img class = "photo" src = "Portfolio/Momento/still1.jpg">
-				</div>
-				<div class = "photo_wrapper x2 right">
-					<img class = "photo" src = "Portfolio/Momento/still2.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/still17.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/still5.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/still4.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/still18.jpg">
-				</div>
-			</div>
-		</div>
-
-		<div class = "gallery_wrapper">
-			<h3 class = "title">Taiwan Documentation</h3>
-			<div class = "summary" style = "margin-top:0px">
-				<p>Momento on Taiwan Production</p>
-			</div>
-			<br>
-			<div class = "photos_wrapper">
-				<div class = "photo_wrapper x2 left"> 
-					<img class = "photo" src = "Portfolio/Momento/still8.jpg">
-				</div>
-				<div class = "photo_wrapper x2 right">
-					<img class = "photo" src = "Portfolio/Momento/still10.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/still9.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/still11.JPG">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/still14.JPG">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/still15.JPG">
-				</div>
-				<div class = "photo_wrapper x2 left"> 
-					<img class = "photo" src = "Portfolio/Momento/still13.JPG">
-				</div>
-				<div class = "photo_wrapper x2 right">
-					<img class = "photo" src = "Portfolio/Momento/still16.JPG">
-				</div>
-			</div>
-		</div>
-
-		<div class = "gallery_wrapper">
-			<h3 class = "title">+ Momento Productions</h3>
-			<div class = "summary" style = "margin-top:0px">
-				<p>Race Relay - Exhibited at California African American Museum</p>
-			</div>
-			<br>
-			<div class = "photos_wrapper">
-				<div class = "photo_wrapper x2 left"> 
-					<img class = "photo" src = "Portfolio/Momento/proj3.jpg">
-				</div>
-				<div class = "photo_wrapper x2 right">
-					<img class = "photo" src = "Portfolio/Momento/proj10.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/proj1.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/proj2.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/proj4.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/proj9.jpg">
-				</div>
-				<div class = "photo_wrapper full">
-					<img class = "photo" src = "Portfolio/Momento/proj8.jpg">
-				</div>
-				<div class = "photo_wrapper x2 left"> 
-					<img class = "photo" src = "Portfolio/Momento/proj5.jpg">
-				</div>
-				<div class = "photo_wrapper x2 right">
-					<img class = "photo" src = "Portfolio/Momento/proj7.jpg">
-				</div>
-
-				
-			</div>
+			</div> 
 		</div>
 	</div>
 
+	<div class = "spacing_afterCaption"></div>
+	<div class = "divider"></div>
+
+	<h4>Other Projects</h4>
+
+</div>
+
+
 	<div id = "other_proj_wrapper">
 
-		<h3 class = "title">Other Projects</h3>
-		<br>
+ 
 		<div class = "other_proj">
 			<a href = "steelcase.html">
 				<img class = "other_proj_photo" src = "Portfolio/Steelcase/Othercover.jpg">
