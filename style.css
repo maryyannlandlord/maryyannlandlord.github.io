@@ -289,6 +289,8 @@ body {
 
 }
 
+ 
+
 
 @media screen and (max-width: 700px) {
 	body{
@@ -326,25 +328,14 @@ body {
 	.content {
     width: 100%;
     padding: 0px;
-    padding-bottom: 10px;
     box-sizing: border-box;
-		padding-right: 10px;
-		padding-left: 10px;
-		padding-top: 26px;
+		padding: 26px 30px 66px 30px;
+		line-height: 1.5em;
 
   }
 
 
-	#index_content{
-		padding-bottom: 20px;
-	}
-
-
-	#experienceflowTitle{
-		border-right: none;
-	}
-
-
+ 
 	#paintedcornerTitle{
 		border-right: none;
 	}
@@ -359,6 +350,7 @@ body {
 	.tableLabel{
 		padding-right: 8px;
 	}
+ 
 
 }
 
@@ -411,10 +403,11 @@ body {
 .playButton{
 	width: 150px;
 	display: block;
-	opacity: 0;
+	opacity: 1;
 	margin: auto;
 	transition: opacity .4s linear;
 	transition-timing-function: ease-in-out;
+	filter: drop-shadow(0 0 0.9rem black);
 }
 
 .playButton.index{
@@ -468,7 +461,7 @@ body {
 
 #reelCover{
   display: block;
-  max-width: 74.5%;
+  max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
 	opacity:1;
@@ -497,8 +490,9 @@ body {
 	text-align: center;
 	margin:auto;
 	background: #020000;
-	margin:0px;
-  padding: 30px 0;
+	max-width: 1423px;
+/*	margin:0px;
+  padding: 30px 0;*/
 }
 
 
@@ -536,12 +530,12 @@ body {
   }
 
   .playButton{
-  	filter: drop-shadow(0 0 0.9rem red);
+  	filter: drop-shadow(0 0 0.9rem black);
   	opacity: 1!important;
   }
 
   .videoTitle{
-  	filter: drop-shadow(0 0 0.9rem red);
+  	filter: drop-shadow(0 0 0.9rem black);
   	opacity: 1!important;
   }
 }
@@ -654,7 +648,7 @@ body {
 
 
 .embed-container.index{
-	padding-bottom: 47.25% ;
+	/*padding-bottom: 47.25% ;*/
 }
 
 .proj_photo{
@@ -740,18 +734,35 @@ body {
 		font-size: 0.8em;
 	}
 
+	#index_content{
+		padding:  0 20px 20px 20px; 
+		box-sizing: border-box;
+	}
+
 }
+
+
+
 
  
 
 @media screen and (max-width: 700px){
 
+	#index_content{
+		padding:  0 20px 20px 20px; 
+		box-sizing: border-box;
+	}
+
 	.portfolio{
+ 
 		padding-top: 40px;
 	}
 
 	#homeTitle{
-		max-width: 462px;
+		max-width: 322px;
+		font-size: 1.7em;
+		padding-bottom: 27px;
+		margin-bottom: 31px;
 	}
 
 	.proj_title{
@@ -760,12 +771,22 @@ body {
 		padding:  5px 10px;
 		background: rgba(0,0,0,0.3);
 		border-radius: 15px;
-		width: max-content;
-		font-size: 1.56em;
+		font-size: 1.4em;
 	}
 
+		.proj_title.full{
+
+			max-width: 300px ;
+
+		}
+
+		.proj_title.short{
+			max-width: 108px;
+		}
+
+
 	.proj_wrapper{
-		max-width: 467px;
+		gap: 10px;
 		font-size: 18px;
 		padding-left: 0;
 		padding-right: 0;
@@ -786,13 +807,13 @@ body {
 	.proj_photo_full{
 		width: 100%;
 		border-radius: 15px;
-		filter: drop-shadow(0 0 .1rem black);
+
 		display: block;
 	}
 
 	.proj_photo{
 		border-radius: 15px;
-		filter: drop-shadow(0 0 .1rem  black);
+
 		display: block;
 
 	
@@ -1311,11 +1332,10 @@ body {
 
 
 .caption{
-	font-size: 13px;
+	font-size: .8em;
 	color: black;
-	width: auto;
-	text-align: center;
-	margin: 0;
+	width: fit-content;
+	margin: auto;
 	margin-top: 28px;
 }
 
@@ -1340,7 +1360,7 @@ body {
 }
 
 .photo_wrapper.up3.tri{
-		width:20%; 
+		width:23%; 
 		float:none;
 	}
 
@@ -1402,7 +1422,7 @@ body {
 }
 
 .textContent.right{
-	padding: 13px 20px 0 20px;
+	padding: 13px 0 0 20px;
 
 }
 
@@ -1418,10 +1438,185 @@ body {
 		font-size: 1.3em;
 	}
 
+	
 }
+
+@media only screen and (max-width: 1065px) {
+
+#info-two{
+		order:  2;
+	}	
+
+	#info-three{
+		align-self:auto;
+		order: 1;
+		text-align: left;
+		max-width: 600px;
+	}
+
+	#info-four{
+		order:  3;
+
+	}
+
+
+	#flex_descrip_wrapper{
+		justify-content: center;
+		margin-top: 56px;
+		padding-bottom: 64px;
+		max-width: 725px;
+	}
+
+	.info_wrapper{
+		text-align: center;
+		max-width: none;
+	}
+
+	#flex_awards{
+		justify-content: center;
+		max-width: 363px;
+		margin: auto;
+		margin-top: 34px;
+		flex-wrap: wrap;
+	}
+
+
+		.textContent{
+			text-align: left;
+		}
+
+		.content h3{
+			text-align: left;
+		}
+
+		.photo_wrapper.up3.tri{
+		width: 26%;
+	}
+
+	.photo_wrapper.up3.tri.amaSectionPhotos{
+	width: 40% ;
+		}
+
+
+}
+
+@media only screen and (max-width: 950px) {
+
+	.galleryx2{
+
+		width: 100%!important;
+
+	}
+
+	.amaDescrip{
+		width: 60%!important;
+	}
+
+	.photo_wrapper.x2 { 
+		width: 80%;
+	}
+
+	.photo_wrapper.up3{
+		width: 50%;;
+	}
+
+	#w69{
+
+	 width:  75%
+	}
+
+	.photos_wrapper{
+		justify-content: center;
+	}
+
+	.photo_wrapper.x2.vert{
+	width: 75%;
+		}
+
+	.photo_wrapper.quadLarge{
+	width: 44%;
+		}
+
+	.photo_wrapper.w39{
+
+	width: 56%;
+
+	}
+
+	.photo_wrapper.up3.left{
+		width:33%
+	}
+	.photo_wrapper.up3.mid{
+		width:33%
+	}
+	.photo_wrapper.up3.right{
+		width:33%
+	}
+
+	.photo_wrapper.up3.tri{
+		width: 33%;
+	}
+
+	.photo_wrapper.quad{
+		width:25%; 
+		float:none;
+	}
+
+		#charSketch{
+		width: 60%;
+	}
+
+
+	#charConcepts{
+		width: 100%;
+	}
+
+
+	.other_proj{
+		padding: 2px;
+		width: 43%;
+	}
+
+	#other_proj_wrapper{
+		gap: 10px;
+	}
+
+	.other_proj.title{
+		font-size:  1.7em;
+	}
+
+	.spacing_afterCaption{
+	height: 50px
+	}
+
+	
+
+	#tiktokIteration > *:nth-child(1){order: 2}
+
+	#tiktokIteration > *:nth-child(2){order: 0}
+
+	#tiktokIteration > *:nth-child(3){order: 1}
+
+
+	#LefRightSwap > *:nth-child(1){order: 1}
+	#LefRightSwap > *:nth-child(2){order: 0}
+
+ 
+
+
+	}
 
 
 @media only screen and (max-width: 700px) {
+
+	.amaDescrip{
+		width: 100%!important;
+	}
+
+	.momentoExhibit{
+		width: 50%!important;
+	}
+
 	#info-two{
 		order:  2;
 	}	
@@ -1430,7 +1625,7 @@ body {
 		align-self:auto;
 		order: 1;
 		text-align: left;
-		max-width: 300px;
+		max-width: 332px;
 	}
 
 	#info-four{
@@ -1465,6 +1660,7 @@ body {
 
 	.caption{
 		margin: 5% 5%;
+		line-height: 1.3em;
 	}
 
 
@@ -1544,6 +1740,15 @@ body {
 	 width:  100%
 
 }
+	.photo_wrapper.up3.left{
+		width:100%
+	}
+	.photo_wrapper.up3.mid{
+		width:100%
+	}
+	.photo_wrapper.up3.right{
+		width:100%
+	}
 
 
 	#IPADUI{
@@ -1569,7 +1774,7 @@ body {
 
 	#flex_descrip_wrapper{
 		justify-content: center;
-		margin-top: 22px;
+		margin-top: 30px;
 		padding-bottom: 64px;
 	}
 
@@ -1588,6 +1793,7 @@ body {
 
 	.textContent{
 		text-align: left;
+ 
 
 	}
 
@@ -1596,15 +1802,18 @@ body {
 	}
 	.content h1{
 		font-size: 3em;
+		line-height: 1.3em;
 	}
 
 	.content h2{
-		font-size: 2.5em ;
+		font-size: 2em;
+		line-height: 1.3em;
 	}
 
 	.content h3{
 		text-align: left;
-		font-size: 1.5em;
+		font-size: 1.3em;
+		line-height: 1.3em;
 	}
 
 
@@ -1615,7 +1824,7 @@ body {
 
 	.text_wrapper{
 		background: rgba(1,1,1,0.3);
-		padding:  7% 10%;
+		padding:  7% 8%;
 		border-radius: 15px;
 		opacity: 100%!important;
 	}
@@ -1654,6 +1863,11 @@ body {
 	height: 50px
 }
 
+#LefRightSwap > *:nth-child(1){order: 1}
+
+#LefRightSwap > *:nth-child(2){order: 0}
+
+ 
 
 
 }

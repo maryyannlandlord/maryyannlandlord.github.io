@@ -60,34 +60,34 @@ $(function() {
 
     $('#reelWrapper').mouseout(function(){
 
-    $('.playButton').css("opacity","0");
+    // $('.playButton').css("opacity","0");
     $('#reelCover').css("opacity", "1");
    });
 
     $('.videoWrapper.1').mouseover(function(){
 
-    $('.playButton.1').css("opacity","1");
+    // $('.playButton.1').css("opacity","1");
     $('.videoTitle.1').css("opacity","1");
     $('.VideoCover.1', this).css("opacity", ".3");
    });
 
     $('.videoWrapper.1').mouseout(function(){
 
-    $('.playButton.1').css("opacity","0");
+    // $('.playButton.1').css("opacity","0");
     $('.videoTitle.1').css("opacity","0");
     $('.VideoCover.1', this).css("opacity", "1");
    });
 
     $('.videoWrapper.2').mouseover(function(){
 
-    $('.playButton.2').css("opacity","1");
+    // $('.playButton.2').css("opacity","1");
     $('.videoTitle.2').css("opacity","1");
     $('.VideoCover.2', this).css("opacity", ".3");
    });
 
     $('.videoWrapper.2').mouseout(function(){
 
-    $('.playButton.2').css("opacity","0");
+    // $('.playButton.2').css("opacity","0");
     $('.videoTitle.2').css("opacity","0");
     $('.VideoCover.2', this).css("opacity", "1");
    });
