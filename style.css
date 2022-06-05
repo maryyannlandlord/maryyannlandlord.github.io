@@ -294,9 +294,7 @@ body, body * {
 
 
 @media screen and (max-width: 700px) {
-	body{
-			font-size: 16px;
-	}
+ 
 
   #nav {
     width: 100%;
