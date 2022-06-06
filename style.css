@@ -132,7 +132,6 @@ body, body * {
 	padding-top: 88px;
 	padding-bottom: 37px;
 	line-height: 1.5em;
-
 }
 
 .content_mid{
@@ -922,6 +921,9 @@ body, body * {
 	margin: 0;
 }
 
+.content h1, .content h2, .content h3 {
+	line-height: 1.3em;
+}
 
 .content h3{
 	color: #a53d83;
@@ -1802,18 +1804,15 @@ body, body * {
 	}
 	.content h1{
 		font-size: 3em;
-		line-height: 1.3em;
 	}
 
 	.content h2{
 		font-size: 2em;
-		line-height: 1.3em;
 	}
 
 	.content h3{
 		text-align: left;
 		font-size: 1.3em;
-		line-height: 1.3em;
 	}
 
 
