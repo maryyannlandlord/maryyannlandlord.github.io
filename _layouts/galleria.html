@@ -55,24 +55,30 @@
 
 	<body>
 	
-	<div id = "index_header">
+	<div id = "header"> 
+	    <div id = "NavBar">
 
-      <div id = "siteTitle">
-        <a href= "index.html">
-          <p>Maryyann Crichton</p>
-        </a>
-      </div>
+	        <a id = "siteTitle" href= "index.html">
+	          Maryyann Crichton
+	        </a>
+	    
+	       
+	      <div id = "nav">
+	      	<div class = "nav_label {% if page.pageName == "index" %} active {% endif %}">
+	        	<a href="index.html">Portfolio</a>
+	      	</div>
+	      	<div class = "nav_label {% if page.pageName == "sketches" %} active {% endif %}"> 
+	        	<a href="Sketches.html" >Sketches</a>
+	      	</div>
+	      	<div class = "nav_label {% if page.pageName == "about" %} active {% endif %}">
+	        	<a href="About.html">About Me</a>
+	     		</div>
+	      
+	      </div>
+	     
 
-      <div id = "nav">
-        <a href="index.html" class = "nav_label {% if page.pageName == "index" %} active {% endif %}">Portfolio</a>
-        <a href="Sketches.html" class = "nav_label {% if page.pageName == "sketches" %} active {% endif %}">Sketches</a>
-        <a href="About.html" class = "nav_label nav_label {% if page.pageName == "about" %} active {% endif %}">About Me</a>
-        <!--<a href="Resume.pdf" target = "blank" class = "nav_label">Resume</a> !-->
-      </div>
-
-    </div>
-
-		<div id = "pageContent">
+	    </div>
+	  </div>
 
 			{{ content }}
 

@@ -61,7 +61,7 @@ $(function() {
     $('#reelWrapper').mouseout(function(){
 
     // $('.playButton').css("opacity","0");
-    $('#reelCover').css("opacity", "1");
+    $('#reelCover').css("opacity", ".8");
    });
 
     $('.videoWrapper.1').mouseover(function(){
@@ -100,6 +100,7 @@ $(function() {
       if (videoOpen == false) {
         $("#reelWrapper").html("<div class='embed-container index'><iframe src='https://player.vimeo.com/video/677522047?autoplay=1&autopause=0' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen allow=autoplay style='max-height:" + (browser_height) + "px'></iframe></div>");
         videoOpen = true;
+        console.log("videoPlay");
         };
       });
 
@@ -128,8 +129,12 @@ $(function() {
         };
       });
 
- 
-
+    var header = document.querySelector('#flex-tableContents');
+    function updateHeader() {
+      header.toggleAttribute('stuck', header.getBoundingClientRect().top == 0);
+      requestAnimationFrame(updateHeader);
+    }
+    updateHeader();
 });
 
 function showCredits(id){

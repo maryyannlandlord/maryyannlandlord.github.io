@@ -48,22 +48,30 @@
 
 
 	<body>
-    <div id = "index_header">
+		<div id = "header"> 
+	    <div id = "NavBar">
 
-      <div id = "siteTitle">
-        <a href= "index.html">
-          <p>Maryyann Crichton</p>
-        </a>
-      </div>
+	        <a id = "siteTitle" href= "index.html">
+	          Maryyann Crichton
+	        </a>
+	    
+	       
+	      <div id = "nav">
+	      	<div class = "nav_label {% if page.pageName == "index" %} active {% endif %}">
+	        	<a href="index.html">Portfolio</a>
+	      	</div>
+	      	<div class = "nav_label {% if page.pageName == "sketches" %} active {% endif %}"> 
+	        	<a href="Sketches.html" >Sketches</a>
+	      	</div>
+	      	<div class = "nav_label {% if page.pageName == "about" %} active {% endif %}">
+	        	<a href="About.html">About Me</a>
+	     		</div>
+	      
+	      </div>
+	     
 
-      <div id = "nav">
-        <a href="index.html" class = "nav_label {% if page.pageName == "index" %} active {% endif %}">Portfolio</a>
-        <a href="Sketches.html" class = "nav_label {% if page.pageName == "sketches" %} active {% endif %}">Sketches</a>
-        <a href="About.html" class = "nav_label nav_label {% if page.pageName == "about" %} active {% endif %}" style = "border-right:0px">About Me</a>
-        <!--<a href="Resume.pdf" target = "blank" class = "nav_label">Resume</a> !-->
-      </div>
-
-    </div>
+	    </div>
+	  </div>
 
 
     <div id = "pageContent">
@@ -74,10 +82,15 @@
 
     <div id = "contact" >
  
-
-      <p>
-      <img class = "socialIcon" src = "email_icon2.png"> mlandlor@gmail.com
-      </p>
+    	<div id = "footer_bubble">
+       <a class = "sociallink" href = "https://www.linkedin.com/in/maryyannlandlord/" target = "_blank">
+      	<img class = "socialIcon" src = "linkedin_icon.png"> 
+    	</a>
+    	<a class = "sociallink" href = "mailto:mlandlor@gmail.com">
+      	<img class = "socialIcon" src = "email_icon2.png"> 
+   	 	</a>
+       
+    	</div>
 
     </div>
     <script src = "jquery-1.11.0.min.js"></script>
