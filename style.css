@@ -103,7 +103,8 @@ body, body * {
 	justify-content: center;
 	align-items: baseline;
 	align-self: center;
-
+	flex-wrap: wrap;
+	row-gap: 15px;
  
 }
 
@@ -164,7 +165,6 @@ body, body * {
 .content{
 	width:1440px;
 	margin:auto;
-	overflow:auto;
 	padding-top: 88px;
 	padding-bottom: 37px;
 	line-height: 1.5em;
@@ -180,7 +180,6 @@ body, body * {
 	max-width: 1300px;
 	margin: auto;
 	overflow: inherit;
-	overflow: auto;
 	margin-bottom: 45px;
 }
 
@@ -413,6 +412,16 @@ border-radius: 20px;
 
 
 
+@media screen and (max-width: 500px){
+	#nav{
+		gap:4px;
+	}
+
+	.nav_label{
+		padding: 5px 10px;
+	}
+
+}
 
 /*///////////////////////////////
 ///////////// VIDEO /////////////
@@ -959,8 +968,7 @@ font-size: 2em;
 
 .divider{
 	border-bottom: 1px solid #b7b7b7;
-	max-width: 600px;
-	width: 600px;
+	width: min(600px,100%);
 	margin: auto;
  	margin-bottom: 69px;
  	margin-top: 69px;
