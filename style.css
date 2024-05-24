@@ -1110,6 +1110,7 @@ font-size: 2em;
 .textContent{
 	max-width: 575px;
 	margin: 0px;
+	padding-left: 0px;
 }
 
 .textContent.wide{
