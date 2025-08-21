@@ -166,7 +166,7 @@ body, body * {
 
 
 .content{
-	width:1440px;
+	max-width:1440px;
 	margin:auto;
 	padding-top: 88px;
 	padding-bottom: 37px;
@@ -189,6 +189,74 @@ body, body * {
 
 .content_wrapper_dark{
 	background-color: #eeeeee;
+}
+
+.outsized {
+	width: var(--wide-content);
+	margin-left: calc((var(--wide-content) - var(--normal-content)) / 2 * -1);
+
+	@media screen and (max-width: 1200px) {
+		width: 100%;
+		margin-left: auto;
+	}
+}
+
+.flex {	
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&.three > div {
+		max-width: 350px;
+	}
+
+	&.two > div {
+		max-width: 550px;
+	}
+
+	@media screen and (max-width: 1200px) {
+		&.three > div, &.two > div {
+			max-width: none;
+		}
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+.content_wrapper_purple {
+	background-color: rgba(165, 61, 131, 1);
+
+	.content {
+		color: white;
+		padding-top: 88px;
+		padding-bottom: 88px;
+
+		h2, h3 {
+			color: white;
+		}
+	}
+}
+
+:root {
+	--wide-content: 1200px;
+	--normal-content: 1000px;
+}
+
+.normal-content {
+	max-width: var(--normal-content);
+}
+
+.wide-content {
+	max-width: var(--wide-content);
+}
+
+ol, ul {
+	li {
+		margin-bottom: 1rem;
+	}
 }
 
 .content_warpper_light{
@@ -2146,6 +2214,113 @@ font-size: 2em;
 	}
 	}
 
+/*////////////////////////////////////
+////////////Hanson Robots/////////////
+/////////////////////////////////////*/
 
 
+#anim-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	width: 400px;
 
+	.anim-header {
+		text-align: center;
+
+		span {
+			display: inline-block;
+			font-weight: bold;
+			background-color: rgba(255, 157, 91, 1);
+			border-radius: 16px;
+			padding: 3px 20px;
+		}
+	}
+}
+
+.fade-out {
+	mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 60%);
+}
+
+.challenge-solution {
+	color: black;
+	text-align: center;
+	margin-bottom: 2rem;
+
+	> div {		
+		padding: 20px 40px;
+		border-radius: 8px;
+		text-align: left;		
+
+		h4 {
+			text-align: left;
+			font-size: 14pt;
+			font-weight: bold;
+			margin-top: 0;
+		}
+
+		p {
+			margin-bottom: 0;
+		}		
+
+		&.challenge {
+			background-color: rgba(255, 157, 91, 1);
+		}
+
+		&.solution {
+			background-color: white;
+		}
+	}
+
+	img {
+		/* will: This ensures the arrow touches the box beneath. 
+		 * Unclear where that space is coming from. */
+		margin-bottom: -7px;
+	}
+}
+
+.puppet-design {
+	margin-top: 2rem;
+	width: var(--wide-content);
+
+	@media screen and (max-width: 1200px) {
+		width: 100%;		
+	}
+
+	h4 {
+		margin-left: -2rem;
+
+		@media screen and (max-width: 1200px) {
+			margin-left: 0;
+		}
+	}
+
+	> div {
+		display: flex;
+		gap: 1rem;
+		flex-flow: wrap;
+
+		> img {
+			max-width: var(--normal-content)
+		}
+		 
+		> div {
+			width: calc(var(--wide-content) - var(--normal-content));
+
+			@media screen and (max-width: 1200px) {
+				width: auto;
+			}
+
+			ul {
+				margin-left: -1em;
+			}
+		}
+	}
+}
+
+h4.miniheader {
+	text-align: left;
+	font-weight: bold;
+	font-size: 16pt;
+	margin-block-start: 1rem;
+}
