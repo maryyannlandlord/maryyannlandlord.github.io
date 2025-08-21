@@ -208,7 +208,7 @@ body, body * {
 	flex-wrap: wrap;
 
 	&.three > div {
-		max-width: 350px;
+		max-width: 287px;
 	}
 
 	&.two > div {
@@ -2305,7 +2305,8 @@ font-size: 2em;
 		}
 		 
 		> div {
-			width: calc(var(--wide-content) - var(--normal-content));
+			width: 370px;
+			 
 
 			@media screen and (max-width: 1200px) {
 				width: auto;
@@ -2321,6 +2322,6 @@ font-size: 2em;
 h4.miniheader {
 	text-align: left;
 	font-weight: bold;
-	font-size: 16pt;
+	font-size: 18px;
 	margin-block-start: 1rem;
 }
