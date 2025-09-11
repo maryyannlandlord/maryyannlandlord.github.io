@@ -1403,6 +1403,10 @@ font-size: 2em;
 
 }
 
+.photo_wrapper.tiktokVersion2{
+	width:48%
+}
+
 .photo_wrapper.x2{
 	float: left;
 	width: 50%;
